@@ -4,7 +4,7 @@ slug: 20260525-resume-website
 project: website
 effort: advanced
 effort_source: classifier
-phase: build
+phase: execute
 progress: 0/34
 mode: interactive
 started: 2026-05-25T01:30:00Z

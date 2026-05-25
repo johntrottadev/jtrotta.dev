@@ -4,8 +4,8 @@ slug: 20260525-resume-website
 project: website
 effort: advanced
 effort_source: classifier
-phase: execute
-progress: 0/34
+phase: complete
+progress: 34/34
 mode: interactive
 started: 2026-05-25T01:30:00Z
 updated: 2026-05-25T01:30:00Z
@@ -53,70 +53,70 @@ Ship a polished, mobile-responsive single-page resume website at the Vercel defa
 
 ### Project Setup
 
-- [ ] ISC-1: `bun install` completes with exit 0 and produces a `node_modules/` directory.
-- [ ] ISC-2: `bun run build` exits 0 with zero TypeScript errors.
-- [ ] ISC-3: `bun run dev` starts a dev server that returns HTTP 200 on `localhost:3000`.
-- [ ] ISC-4: `package.json` uses `bun` as the package manager, not npm.
+- [x] ISC-1: `bun install` completes with exit 0 and produces a `node_modules/` directory.
+- [x] ISC-2: `bun run build` exits 0 with zero TypeScript errors.
+- [x] ISC-3: `bun run dev` starts a dev server that returns HTTP 200 on `localhost:3000`.
+- [x] ISC-4: `package.json` uses `bun` as the package manager, not npm.
 
 ### Hero Section
 
-- [ ] ISC-5: The page contains "John Trotta" in an `h1` element visible above the fold.
-- [ ] ISC-6: The subtitle "VP of Technology | Infrastructure and Security Leadership" is visible below the name.
-- [ ] ISC-7: A professional summary paragraph (the resume's executive summary) is present below the subtitle.
-- [ ] ISC-8: Links to LinkedIn (`linkedin.com/in/johntrotta1`) and GitHub (`github.com/johntrottadev`) are present and clickable in the hero.
-- [ ] ISC-9: Contact email `johntrottadev@gmail.com` is present as a mailto link.
+- [x] ISC-5: The page contains "John Trotta" in an `h1` element visible above the fold.
+- [x] ISC-6: The subtitle "VP of Technology | Infrastructure and Security Leadership" is visible below the name.
+- [x] ISC-7: A professional summary paragraph (the resume's executive summary) is present below the subtitle.
+- [x] ISC-8: Links to LinkedIn (`linkedin.com/in/johntrotta1`) and GitHub (`github.com/johntrottadev`) are present and clickable in the hero.
+- [x] ISC-9: Contact email `johntrottadev@gmail.com` is present as a mailto link.
 
 ### Experience Section
 
-- [ ] ISC-10: A section headed "Experience" exists on the page.
-- [ ] ISC-11: The CTO role at RTR Financial Services (Aug 2019 – Present) is displayed with title, company, dates, and location.
-- [ ] ISC-12: At least 5 CTO bullet points from the resume are rendered.
-- [ ] ISC-13: The IT Manager role (Feb 2017 – Aug 2019) is displayed with title, company, dates.
-- [ ] ISC-14: Earlier roles (Systems Engineer, Support Technician, Business Analyst) are listed with title, company, and dates.
+- [x] ISC-10: A section headed "Experience" exists on the page.
+- [x] ISC-11: The CTO role at RTR Financial Services (Aug 2019 – Present) is displayed with title, company, dates, and location.
+- [x] ISC-12: At least 5 CTO bullet points from the resume are rendered.
+- [x] ISC-13: The IT Manager role (Feb 2017 – Aug 2019) is displayed with title, company, dates.
+- [x] ISC-14: Earlier roles (Systems Engineer, Support Technician, Business Analyst) are listed with title, company, and dates.
 
 ### Education & Certifications
 
-- [ ] ISC-15: An "Education" section shows "CUNY Baruch College, Zicklin School of Business" with the BBA degree.
-- [ ] ISC-16: A "Certifications" section lists all four certs: CISSP, VCP, MCSE, CCNA.
-- [ ] ISC-17: Each certification includes the full credential name and specialization area.
+- [x] ISC-15: An "Education" section shows "CUNY Baruch College, Zicklin School of Business" with the BBA degree.
+- [x] ISC-16: A "Certifications" section lists all four certs: CISSP, VCP, MCSE, CCNA.
+- [x] ISC-17: Each certification includes the full credential name and specialization area.
 
 ### Skills / Tech Stack
 
-- [ ] ISC-18: A "Skills" or "Technologies" section exists grouping technical competencies.
-- [ ] ISC-19: Skills are organized into logical categories (Security, Infrastructure, Cloud, Automation, etc.).
+- [x] ISC-18: A "Skills" or "Technologies" section exists grouping technical competencies.
+- [x] ISC-19: Skills are organized into logical categories (Security, Infrastructure, Cloud, Automation, etc.).
 
 ### Projects / GitHub
 
-- [ ] ISC-20: A section links to GitHub profile `github.com/johntrottadev` with a call-to-action.
-- [ ] ISC-21: At least 2 notable projects from the resume or GitHub are highlighted with short descriptions.
+- [x] ISC-20: A section links to GitHub profile `github.com/johntrottadev` with a call-to-action.
+- [x] ISC-21: At least 2 notable projects from the resume or GitHub are highlighted with short descriptions.
 
 ### Contact Section
 
-- [ ] ISC-22: A footer or contact section includes email, LinkedIn, and GitHub links.
-- [ ] ISC-23: The contact section includes location "NY / NJ".
+- [x] ISC-22: A footer or contact section includes email, LinkedIn, and GitHub links.
+- [x] ISC-23: The contact section includes location "NY / NJ".
 
 ### Visual Design & Responsiveness
 
-- [ ] ISC-24: The page renders without horizontal scroll at viewport width 375px (mobile).
-- [ ] ISC-25: The page renders without horizontal scroll at viewport width 1440px (desktop).
-- [ ] ISC-26: Text contrast ratios meet WCAG 2.1 AA (4.5:1 for body text).
-- [ ] ISC-27: The page uses a consistent color scheme (no more than 3 primary colors).
-- [ ] ISC-28: Antecedent: Typography uses a professional sans-serif font appropriate for executive-level presentation.
+- [x] ISC-24: The page renders without horizontal scroll at viewport width 375px (mobile).
+- [x] ISC-25: The page renders without horizontal scroll at viewport width 1440px (desktop).
+- [x] ISC-26: Text contrast ratios meet WCAG 2.1 AA (4.5:1 for body text).
+- [x] ISC-27: The page uses a consistent color scheme (no more than 3 primary colors).
+- [x] ISC-28: Antecedent: Typography uses a professional sans-serif font appropriate for executive-level presentation.
 
 ### Performance
 
-- [ ] ISC-29: `bun run build` produces a static export under 500KB total (HTML + CSS + JS).
-- [ ] ISC-30: No external font files are loaded (use system font stack or bundled).
+- [x] ISC-29: `bun run build` produces a static export under 500KB total (HTML + CSS + JS).
+- [x] ISC-30: No external font files are loaded (use system font stack or bundled).
 
 ### Code Quality
 
-- [ ] ISC-31: Resume data is stored in a separate TypeScript data file, not inline in components.
-- [ ] ISC-32: The project has a clean `tsconfig.json` with strict mode enabled.
+- [x] ISC-31: Resume data is stored in a separate TypeScript data file, not inline in components.
+- [x] ISC-32: The project has a clean `tsconfig.json` with strict mode enabled.
 
 ### Anti-criteria
 
-- [ ] ISC-33: Anti: No placeholder or lorem ipsum text appears anywhere on the rendered page.
-- [ ] ISC-34: Anti: No broken links (all `href` values resolve to valid targets or mailto).
+- [x] ISC-33: Anti: No placeholder or lorem ipsum text appears anywhere on the rendered page.
+- [x] ISC-34: Anti: No broken links (all `href` values resolve to valid targets or mailto).
 
 ## Test Strategy
 

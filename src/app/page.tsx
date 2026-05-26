@@ -5,6 +5,7 @@ import Skills from "@/components/Skills";
 import Certifications from "@/components/Certifications";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
+import MyStack from "@/components/MyStack";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Certifications />
         <Education />
         <Projects />
+        <MyStack />
       </main>
       <Contact />
     </>

@@ -53,7 +53,7 @@ export default function Experience() {
                         className="mt-2 w-1.5 h-1.5 bg-accent rounded-full shrink-0"
                         aria-hidden="true"
                       />
-                      <span className="leading-relaxed">{bullet.text}</span>
+                      <span className="leading-relaxed">{bullet}</span>
                     </li>
                   ))}
                 </ul>

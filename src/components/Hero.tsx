@@ -50,15 +50,13 @@ function EmailIcon() {
 }
 
 export default function Hero() {
-  const { contact, summary, metrics } = resumeData;
+  const { contact, summary } = resumeData;
 
   return (
     <section className="relative bg-hero-bg text-white overflow-hidden">
-      {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-hero-bg via-hero-bg to-hero-bg-light" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-40 sm:pb-28">
-        {/* Name and title */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
           {contact.name.toUpperCase()}
         </h1>
@@ -66,26 +64,10 @@ export default function Hero() {
           {contact.title}
         </p>
 
-        {/* Summary */}
         <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mb-12">
           {summary}
         </p>
 
-        {/* Metrics banner */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 mb-12 max-w-3xl">
-          {metrics.map((metric) => (
-            <div key={metric.label} className="text-center sm:text-left">
-              <div className="text-3xl sm:text-4xl font-bold text-white mb-1">
-                {metric.value}
-              </div>
-              <div className="text-sm text-slate-400 uppercase tracking-wider">
-                {metric.label}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Social links */}
         <div className="flex flex-wrap gap-4">
           <a
             href={contact.linkedinUrl}

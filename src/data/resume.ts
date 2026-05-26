@@ -108,7 +108,7 @@ export const resumeData: ResumeData = {
       ],
     },
     {
-      role: "Systems Engineer",
+      role: "Support Technician",
       company: "Online Computers",
       period: "June 2016 – February 2017",
       location: "Whippany, NJ",

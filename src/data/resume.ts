@@ -72,7 +72,7 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "Technology executive with 17 years of experience, including 8+ years owning enterprise security, compliance, and infrastructure in regulated financial services. Proven leader of SOC 2, HIPAA, and PCI programs with a track record of high availability, zero major security incidents, and successful audits while scaling systems, reducing costs, and enabling revenue growth. Operates as architect, hands-on reviewer, and final escalation authority.",
+    "17 years in technology leadership, the last 8+ owning enterprise security, compliance, and infrastructure for a regulated financial services firm. I run SOC 2, HIPAA, and PCI programs end-to-end, keep systems at 99.99% uptime, and haven't had a major security incident in seven years. I still architect, review code, and build — I'm not the executive who stopped touching the work.",
 
   experience: [
     {
@@ -90,9 +90,9 @@ export const resumeData: ResumeData = {
         "Scaled infrastructure and controls through significant organizational growth; led large-scale P2V, data center, cloud, OS, and app migrations",
         "Reduced technology spend substantially through architecture rationalization and vendor consolidation",
         "Directly supported enterprise and regulated-client revenue by owning technical RFPs, security questionnaires, and contract security terms",
-        "Perform regular vendor risk assessments; act as primary technical liaison for clients, auditors, and regulators",
-        "Delivered significant operational savings via automation (PowerShell, Python)",
-        "Hands-on expertise in AI systems, agentic workflows, and autonomous pipelines",
+        "Primary technical liaison for clients, auditors, and regulators; lead vendor risk assessments that directly informed contract and procurement decisions",
+        "Automated manual operations with PowerShell and Python, eliminating recurring toil across infrastructure, security, and compliance workflows",
+        "Building AI-driven operations tooling — agentic workflows that monitor, remediate, and report autonomously with human-in-the-loop approval",
       ],
     },
     {
@@ -112,7 +112,8 @@ export const resumeData: ResumeData = {
       company: "Online Computers",
       period: "June 2016 – February 2017",
       location: "Whippany, NJ",
-      description: "",
+      description:
+        "MSP environment supporting multiple SMB clients across diverse technology stacks.",
       bullets: [],
     },
     {
@@ -120,7 +121,8 @@ export const resumeData: ResumeData = {
       company: "RTR Financial Services, Inc.",
       period: "January 2012 – June 2016",
       location: "Staten Island, NY",
-      description: "",
+      description:
+        "Hands-on support across all systems and infrastructure, building the institutional knowledge that later informed the security and compliance programs I would own.",
       bullets: [],
     },
     {
@@ -128,7 +130,8 @@ export const resumeData: ResumeData = {
       company: "RTR Financial Services, Inc.",
       period: "August 2008 – January 2012",
       location: "Staten Island, NY",
-      description: "",
+      description:
+        "First role at RTR — learned the business from the operations side before moving into technology.",
       bullets: [],
     },
   ],

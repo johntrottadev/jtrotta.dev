@@ -37,8 +37,9 @@ export default function MyStack() {
           My Stack
         </h2>
         <p className="text-gray-600 mb-4 max-w-2xl">
-          The tools and platforms I use daily — from AI-assisted development to a
-          fully GitOps-managed homelab running 25+ services on bare metal.
+          What I work with day to day — the tools behind the infrastructure,
+          security, automation, and monitoring I manage professionally and at
+          home.
         </p>
 
         <div className="space-y-4">

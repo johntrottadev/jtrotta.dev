@@ -5,6 +5,7 @@ const categoryOrder = [
   "Infrastructure",
   "Monitoring",
   "Operations",
+  "Security",
   "Networking",
   "Dev Tools",
   "Self-Hosted Apps",
@@ -15,6 +16,7 @@ const categoryColors: Record<string, string> = {
   Infrastructure: "bg-blue-100 text-blue-800 border-blue-200",
   Monitoring: "bg-amber-100 text-amber-800 border-amber-200",
   Operations: "bg-emerald-100 text-emerald-800 border-emerald-200",
+  Security: "bg-red-100 text-red-800 border-red-200",
   Networking: "bg-cyan-100 text-cyan-800 border-cyan-200",
   "Dev Tools": "bg-slate-100 text-slate-800 border-slate-200",
   "Self-Hosted Apps": "bg-rose-100 text-rose-800 border-rose-200",
@@ -29,17 +31,17 @@ export default function MyStack() {
     .filter((g) => g.items.length > 0);
 
   return (
-    <section id="stack" className="py-16 sm:py-24 bg-section-bg">
+    <section id="stack" className="py-6 sm:py-8 bg-section-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
           My Stack
         </h2>
-        <p className="text-gray-600 mb-12 max-w-2xl">
+        <p className="text-gray-600 mb-4 max-w-2xl">
           The tools and platforms I use daily — from AI-assisted development to a
           fully GitOps-managed homelab running 25+ services on bare metal.
         </p>
 
-        <div className="space-y-8">
+        <div className="space-y-4">
           {grouped.map((group) => (
             <div key={group.category}>
               <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">

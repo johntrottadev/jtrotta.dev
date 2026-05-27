@@ -86,19 +86,19 @@ function CategoryIcon({ category }: { category: string }) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-16 sm:py-24 bg-section-bg">
+    <section id="skills" className="py-6 sm:py-8 bg-section-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Skills
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {resumeData.skillCategories.map((category) => (
             <div
               key={category.name}
-              className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-section-border"
+              className="bg-white rounded-lg p-4 shadow-sm border border-section-border"
             >
-              <div className="flex items-center gap-3 mb-5">
+              <div className="flex items-center gap-3 mb-3">
                 <div className="text-accent">
                   <CategoryIcon category={category.name} />
                 </div>

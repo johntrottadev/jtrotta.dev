@@ -56,15 +56,15 @@ export default function Hero() {
     <section className="relative bg-hero-bg text-white overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-hero-bg via-hero-bg to-hero-bg-light" />
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-40 sm:pb-28">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10 sm:pt-28 sm:pb-14">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-3">
           {contact.name.toUpperCase()}
         </h1>
-        <p className="text-lg sm:text-xl text-accent font-medium mb-8">
+        <p className="text-lg sm:text-xl text-accent font-medium mb-4">
           {contact.title}
         </p>
 
-        <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mb-12">
+        <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mb-6">
           {summary}
         </p>
 
@@ -83,7 +83,7 @@ export default function Hero() {
             href={contact.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white text-sm font-medium rounded-lg transition-colors border border-white/20"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-600 hover:bg-slate-500 text-white text-sm font-medium rounded-lg transition-colors"
             aria-label="GitHub profile"
           >
             <GitHubIcon />
@@ -91,7 +91,7 @@ export default function Hero() {
           </a>
           <a
             href={`mailto:${contact.email}`}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white text-sm font-medium rounded-lg transition-colors border border-white/20"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-500 hover:bg-slate-400 text-white text-sm font-medium rounded-lg transition-colors"
             aria-label="Send email"
           >
             <EmailIcon />

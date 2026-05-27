@@ -2,16 +2,16 @@ import { resumeData } from "@/data/resume";
 
 export default function Education() {
   return (
-    <section id="education" className="py-16 sm:py-24 bg-section-bg">
+    <section id="education" className="py-6 sm:py-8 bg-section-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Education
         </h2>
 
         {resumeData.education.map((edu) => (
           <div
             key={edu.institution}
-            className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-section-border max-w-2xl"
+            className="bg-white rounded-lg p-4 sm:p-5 shadow-sm border border-section-border max-w-2xl"
           >
             <h3 className="text-xl font-semibold text-gray-900">
               {edu.institution}

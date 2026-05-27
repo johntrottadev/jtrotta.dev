@@ -2,19 +2,19 @@ import { resumeData } from "@/data/resume";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16 sm:py-24 bg-white">
+    <section id="experience" className="py-10 sm:py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
           Experience
         </h2>
 
-        <div className="space-y-12">
+        <div className="space-y-8">
           {resumeData.experience.map((job, index) => (
             <div
               key={`${job.company}-${job.role}`}
               className={`relative ${
                 index < resumeData.experience.length - 1
-                  ? "pb-12 border-b border-section-border"
+                  ? "pb-8 border-b border-section-border"
                   : ""
               }`}
             >

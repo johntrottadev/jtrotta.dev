@@ -258,7 +258,7 @@ export const resumeData: ResumeData = {
     {
       name: "PAI",
       category: "AI",
-      url: "https://github.com/danielmiessler/PAI",
+      url: "https://github.com/danielmiessler/Personal_AI_Infrastructure",
     },
     {
       name: "GSD",

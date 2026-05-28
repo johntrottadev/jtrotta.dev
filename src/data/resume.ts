@@ -311,5 +311,11 @@ export const resumeData: ResumeData = {
       title: "Artificial Intelligence: Empowering Human Agents for Better Efficiency",
       url: "https://www.accountsrecovery.net/courses/artificial-intelligence-empowering-human-agents-for-better-efficiency-from-11-6-2024/",
     },
+    {
+      publication: "AccountsRecovery.net",
+      date: "Archive",
+      title: "View all speaking engagements",
+      url: "https://www.accountsrecovery.net/course-tag/john-trotta/",
+    },
   ],
 };

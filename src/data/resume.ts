@@ -283,15 +283,33 @@ export const resumeData: ResumeData = {
   press: [
     {
       publication: "AccountsRecovery.net",
+      date: "April 2026",
+      title: "AI 101: Back to the Basics",
+      url: "https://www.accountsrecovery.net/courses/ai-101-back-to-the-basics-from-04-02-2026/",
+    },
+    {
+      publication: "AccountsRecovery.net",
       date: "December 2025",
       title: "Getting to Know John Trotta of RTR Financial Services",
       url: "https://www.accountsrecovery.net/2025/12/11/getting-to-know-john-trotta-of-rtr-financial-services/",
     },
     {
       publication: "AccountsRecovery.net",
-      date: "Webinar Series",
-      title: "Featured Speaker — Industry Webinars on Compliance and Technology",
-      url: "https://www.accountsrecovery.net/course-tag/john-trotta/",
+      date: "March 2025",
+      title: "Teaching Prompt Engineering to Your Staff",
+      url: "https://www.accountsrecovery.net/courses/teaching-prompt-engineering-to-your-staff-from-3-5-2025/",
+    },
+    {
+      publication: "AccountsRecovery.net",
+      date: "January 2025",
+      title: "Using AI as a Research Tool and for Creation of Policies and Procedures",
+      url: "https://www.accountsrecovery.net/courses/using-ai-as-a-research-tool-and-for-creation-of-policies-and-procedures-from-1-7-2025/",
+    },
+    {
+      publication: "AccountsRecovery.net",
+      date: "November 2024",
+      title: "Artificial Intelligence: Empowering Human Agents for Better Efficiency",
+      url: "https://www.accountsrecovery.net/courses/artificial-intelligence-empowering-human-agents-for-better-efficiency-from-11-6-2024/",
     },
   ],
 };

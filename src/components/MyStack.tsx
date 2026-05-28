@@ -6,6 +6,7 @@ const itemColors: Record<string, string> = {
   PAI: "bg-violet-100 text-violet-800 border-violet-200 hover:bg-violet-200",
   GSD: "bg-emerald-100 text-emerald-800 border-emerald-200 hover:bg-emerald-200",
   "LLM-Wiki": "bg-sky-100 text-sky-800 border-sky-200 hover:bg-sky-200",
+  "VS Code": "bg-rose-100 text-rose-800 border-rose-200 hover:bg-rose-200",
 };
 
 export default function MyStack() {

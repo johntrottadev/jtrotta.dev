@@ -270,5 +270,10 @@ export const resumeData: ResumeData = {
       category: "AI",
       url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
     },
+    {
+      name: "VS Code",
+      category: "AI",
+      url: "https://code.visualstudio.com/",
+    },
   ],
 };

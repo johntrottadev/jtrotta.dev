@@ -268,7 +268,7 @@ export const resumeData: ResumeData = {
     {
       name: "LLM-Wiki",
       category: "AI",
-      url: "",
+      url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
     },
   ],
 };

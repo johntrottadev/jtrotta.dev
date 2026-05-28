@@ -82,17 +82,17 @@ export const resumeData: ResumeData = {
       period: "August 2019 – Present",
       location: "Staten Island, NY",
       description:
-        "Security, compliance, and technology for a mid-size financial services firm. Hybrid on-prem and cloud.",
+        "Executive owner of security, compliance, and technology for a regulated mid-size financial services firm operating across hybrid on-prem and cloud.",
       bullets: [
-        "Built the defense-in-depth security program from scratch. IAM, EDR, DLP, PKI, network security, 24×7 SOC. Seven years without a major incident.",
-        "Created the company's SOC 2 Type II, PCI-DSS, and HIPAA programs where none existed. Designed the controls, wrote the policy library, set the audit scope. Hit every certification on the first try.",
-        "10+ audits, zero material findings. Quarterly vulnerability assessments and pen tests, tracked to closure.",
-        "Took uptime from ~95% to 99.99%. Quarterly DR/BC tests against aggressive RPO and RTO targets.",
-        "Designed an AI compliance monitoring platform that replaced manual spot-checking with full-coverage disclosure verification and sentiment analysis on customer calls. Caught the blind spots sampling left behind and gave managers their week back.",
-        "Strategic advisor to ownership on risk, org design, and operational efficiency. The conversations go past technology.",
-        "Technical authority on RFPs, security questionnaires, and contract terms. I present to prospective regulated clients and handle the legal, auditor, and regulator side.",
-        "Cut technology spend significantly through architecture rationalization and vendor consolidation while the company grew through it.",
-        "Build AI ops tooling: agentic workflows that monitor, remediate, and report on their own. Anything risky comes back for approval.",
+        "Built the defense-in-depth security program from scratch across IAM, EDR, DLP, PKI, network security, and 24×7 SOC. Zero major incidents in seven years.",
+        "Stood up SOC 2 Type II, PCI-DSS, and HIPAA from nothing. Designed the control frameworks, authored the policy library, defined the audit scope. First-time certification on every program.",
+        "Passed 10+ audits end-to-end with zero material findings. Run quarterly vulnerability assessments and penetration tests with every finding tracked to closure.",
+        "Drove uptime from ~95% to 99.99%. Lead quarterly DR/BC testing against aggressive RPO and RTO targets.",
+        "Designed and shipped an AI compliance monitoring platform that replaced manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Closed the compliance blind spots sampling could never catch and gave managers hours back every week.",
+        "Trusted advisor to ownership on risk, organizational design, and operational efficiency across the business — not just the technology side.",
+        "Technical authority on proposals, RFPs, security questionnaires, and contract terms. Present directly to prospective regulated clients. Primary liaison to legal, auditors, and regulators.",
+        "Drove down technology spend through architecture rationalization and vendor consolidation, even as the company scaled through major growth.",
+        "Build AI ops tooling: agentic workflows that monitor, remediate, and report on their own. Anything risky still comes back for approval.",
       ],
     },
     {
@@ -102,8 +102,8 @@ export const resumeData: ResumeData = {
       location: "Staten Island, NY",
       description: "",
       bullets: [
-        "Led the WannaCry ransomware recovery with no DR plan, no golden images, no documented procedures. Pulled together an ad-hoc response across the team and outside vendors. Restored full operations in 48 hours.",
-        "Turned the incident into the trigger for building formal disaster recovery, business continuity, and security monitoring programs.",
+        "Led the WannaCry ransomware recovery with no DR plan, no golden images, and no documented procedures. Coordinated an ad-hoc response across internal team and outside vendors. Restored full operations in 48 hours.",
+        "Used the incident as the catalyst to stand up formal disaster recovery, business continuity, and security monitoring programs from scratch.",
         "Owned availability, security, patching, and compliance across every enterprise system and network.",
       ],
     },
@@ -114,8 +114,8 @@ export const resumeData: ResumeData = {
       location: "Staten Island, NY",
       description: "",
       bullets: [
-        "Designed and deployed the enterprise domain, network segmentation, servers, and the security controls that everything else was built on.",
-        "Brought in PowerShell and Python and made automation the default.",
+        "Designed and deployed enterprise domain architecture, network segmentation, server infrastructure, and the foundational security controls every program since has been built on.",
+        "Established PowerShell and Python as the automation default — the operating model the company would scale on.",
       ],
     },
     {
@@ -125,7 +125,7 @@ export const resumeData: ResumeData = {
       location: "Staten Island, NY",
       description: "",
       bullets: [
-        "Took sole ownership of enterprise IT. The network was barely managed, with no security controls and no documented policies.",
+        "Assumed sole ownership of enterprise IT. Inherited a barely-managed network with no security controls and no documented policies.",
       ],
     },
     {
@@ -135,7 +135,7 @@ export const resumeData: ResumeData = {
       location: "Staten Island, NY",
       description: "",
       bullets: [
-        "Analyzed business processes across the revenue side of the company. The cross-functional view shaped how I approached technology and security later.",
+        "Analyzed business processes and operational workflows across revenue-generating departments. The cross-functional fluency I built here later shaped how I approached technology and security.",
       ],
     },
   ],
@@ -232,7 +232,7 @@ export const resumeData: ResumeData = {
     {
       name: "Compliance Monitoring Platform",
       description:
-        "AI platform that replaces manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Catches the compliance gaps that sampling misses.",
+        "AI platform that replaced manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Closed the compliance blind spots that sampling could never catch.",
       technologies: "Python, Speech-to-Text, LLM APIs, Sentiment Analysis",
     },
     {

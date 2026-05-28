@@ -72,7 +72,7 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "17 years building security and compliance programs from the ground up at a regulated financial services firm. I created SOC 2 Type II, PCI-DSS, and HIPAA programs from scratch, passed 10+ audits with zero material findings, and haven't had a major security incident in seven years. I sit close to ownership as a strategic advisor — and I still architect, review code, and build the platforms that run the business.",
+    "I build security and compliance programs where none exist, and they pass audits on the first try. I've done it in regulated financial services, from an empty network to a defense-in-depth operation with zero major incidents and a clean audit record across SOC 2, PCI, and HIPAA. I deploy AI systems that generate revenue and catch compliance failures before they become problems. I present to clients, close deals, advise ownership, and fix things that aren't in my job description. Operations management background, CISSP, and I still write code when it's the fastest path to the answer.",
 
   experience: [
     {

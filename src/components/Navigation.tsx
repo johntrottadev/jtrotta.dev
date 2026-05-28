@@ -5,6 +5,7 @@ import { resumeData } from "@/data/resume";
 
 const navLinks = [
   { label: "Experience", href: "#experience" },
+  { label: "Press", href: "#press" },
   { label: "Skills", href: "#skills" },
   { label: "Certifications", href: "#certifications" },
   { label: "Education", href: "#education" },

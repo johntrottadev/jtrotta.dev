@@ -49,6 +49,13 @@ export interface StackItem {
   url?: string;
 }
 
+export interface PressItem {
+  publication: string;
+  date: string;
+  title: string;
+  url: string;
+}
+
 export interface ResumeData {
   contact: ContactInfo;
   summary: string;
@@ -58,6 +65,7 @@ export interface ResumeData {
   education: EducationEntry[];
   projects: Project[];
   stack: StackItem[];
+  press: PressItem[];
 }
 
 export const resumeData: ResumeData = {
@@ -269,6 +277,15 @@ export const resumeData: ResumeData = {
       name: "LLM-Wiki",
       category: "AI",
       url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+    },
+  ],
+
+  press: [
+    {
+      publication: "AccountsRecovery.net",
+      date: "December 2025",
+      title: "Getting to Know John Trotta of RTR Financial Services",
+      url: "https://www.accountsrecovery.net/2025/12/11/getting-to-know-john-trotta-of-rtr-financial-services/",
     },
   ],
 };

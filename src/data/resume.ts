@@ -287,5 +287,11 @@ export const resumeData: ResumeData = {
       title: "Getting to Know John Trotta of RTR Financial Services",
       url: "https://www.accountsrecovery.net/2025/12/11/getting-to-know-john-trotta-of-rtr-financial-services/",
     },
+    {
+      publication: "AccountsRecovery.net",
+      date: "Webinar Series",
+      title: "Featured Speaker — Industry Webinars on Compliance and Technology",
+      url: "https://www.accountsrecovery.net/course-tag/john-trotta/",
+    },
   ],
 };

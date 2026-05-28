@@ -263,7 +263,7 @@ export const resumeData: ResumeData = {
     {
       name: "GSD",
       category: "AI",
-      url: "",
+      url: "https://github.com/open-gsd/get-shit-done-redux",
     },
     {
       name: "LLM-Wiki",

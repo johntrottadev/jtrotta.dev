@@ -46,6 +46,7 @@ export interface Project {
 export interface StackItem {
   name: string;
   category: string;
+  url?: string;
 }
 
 export interface ResumeData {
@@ -249,20 +250,21 @@ export const resumeData: ResumeData = {
   ],
 
   stack: [
-    { name: "QRadar", category: "Security" },
-    { name: "SentinelOne", category: "Security" },
-    { name: "ThreatLocker", category: "Security" },
-    { name: "KnowBe4", category: "Security" },
-    { name: "Wazuh", category: "Security" },
-    { name: "OpenVAS", category: "Security" },
-    { name: "Palo Alto", category: "Networking" },
-    { name: "Cisco", category: "Networking" },
-    { name: "Kubernetes (k3s)", category: "Infrastructure" },
-    { name: "Docker", category: "Infrastructure" },
-    { name: "Terraform", category: "Infrastructure" },
-    { name: "Ansible", category: "Infrastructure" },
-    { name: "Kube-Prometheus Stack", category: "Monitoring" },
-    { name: "Grafana", category: "Monitoring" },
     { name: "Claude Code", category: "AI" },
+    {
+      name: "PAI",
+      category: "AI",
+      url: "https://github.com/danielmiessler/PAI",
+    },
+    {
+      name: "GSD",
+      category: "AI",
+      url: "https://github.com/danielmiessler/get-shit-done",
+    },
+    {
+      name: "LLM-Wiki",
+      category: "AI",
+      url: "https://github.com/danielmiessler/llm-wiki",
+    },
   ],
 };

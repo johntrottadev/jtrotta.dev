@@ -91,7 +91,7 @@ export const resumeData: ResumeData = {
         "Strategic advisor to ownership on risk, org design, and operational efficiency. The conversations go past technology.",
         "Technical authority on RFPs, security questionnaires, and contract terms. I present to prospective regulated clients and handle the legal, auditor, and regulator side.",
         "Cut technology spend significantly through architecture rationalization and vendor consolidation while the company grew through it.",
-        "Build AI ops tooling — agentic workflows that monitor, remediate, and report on their own. Anything risky comes back for approval.",
+        "Build AI ops tooling: agentic workflows that monitor, remediate, and report on their own. Anything risky comes back for approval.",
       ],
     },
     {
@@ -255,7 +255,6 @@ export const resumeData: ResumeData = {
     { name: "KnowBe4", category: "Security" },
     { name: "Wazuh", category: "Security" },
     { name: "OpenVAS", category: "Security" },
-    { name: "SharePoint", category: "Security" },
     { name: "Palo Alto", category: "Networking" },
     { name: "Cisco", category: "Networking" },
     { name: "Kubernetes (k3s)", category: "Infrastructure" },

@@ -250,7 +250,11 @@ export const resumeData: ResumeData = {
   ],
 
   stack: [
-    { name: "Claude Code", category: "AI" },
+    {
+      name: "Claude Code",
+      category: "AI",
+      url: "https://www.anthropic.com/claude-code",
+    },
     {
       name: "PAI",
       category: "AI",
@@ -259,12 +263,12 @@ export const resumeData: ResumeData = {
     {
       name: "GSD",
       category: "AI",
-      url: "https://github.com/danielmiessler/get-shit-done",
+      url: "",
     },
     {
       name: "LLM-Wiki",
       category: "AI",
-      url: "https://github.com/danielmiessler/llm-wiki",
+      url: "",
     },
   ],
 };

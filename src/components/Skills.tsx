@@ -3,8 +3,8 @@ import { resumeData } from "@/data/resume";
 const categoryIcons: Record<string, string> = {
   "Security and Compliance": "shield",
   "Infrastructure and Cloud": "server",
-  "Automation and Engineering": "code",
-  "Leadership and Strategy": "chart",
+  "Engineering and Automation": "code",
+  "Executive Leadership": "chart",
 };
 
 function CategoryIcon({ category }: { category: string }) {

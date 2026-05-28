@@ -46,6 +46,14 @@ export interface Project {
 export interface StackItem {
   name: string;
   category: string;
+  url?: string;
+}
+
+export interface PressItem {
+  publication: string;
+  date: string;
+  title: string;
+  url: string;
 }
 
 export interface ResumeData {
@@ -57,12 +65,13 @@ export interface ResumeData {
   education: EducationEntry[];
   projects: Project[];
   stack: StackItem[];
+  press: PressItem[];
 }
 
 export const resumeData: ResumeData = {
   contact: {
     name: "John Trotta",
-    title: "VP of Technology | Infrastructure and Security Leadership",
+    title: "Chief Technology & Security Officer",
     location: "NY / NJ",
     email: "johntrottadev@gmail.com",
     linkedin: "linkedin.com/in/johntrotta1",
@@ -72,64 +81,70 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "Technology executive with 17 years of experience, including 8+ years owning enterprise security, compliance, and infrastructure in regulated financial services. Proven leader of SOC 2, HIPAA, and PCI programs with a track record of high availability, zero major security incidents, and successful audits while scaling systems, reducing costs, and enabling revenue growth. Operates as architect, hands-on reviewer, and final escalation authority.",
+    "I build security and compliance programs where none exist, and they pass audits on the first try. I've done it in regulated financial services, from an empty network to a defense-in-depth operation with zero major incidents and a clean audit record across SOC 2, PCI, and HIPAA. I deploy AI systems that generate revenue and catch compliance failures before they become problems. I present to clients, close deals, advise ownership, and fix things that aren't in my job description. Operations management background, CISSP, and I still write code when it's the fastest path to the answer.",
 
   experience: [
     {
-      role: "VP of Technology",
+      role: "Chief Technology & Security Officer",
       company: "RTR Financial Services, Inc.",
       period: "August 2019 – Present",
       location: "Staten Island, NY",
       description:
-        "Executive owner of technology, security, and compliance for a mid-size financial services organization in a hybrid on-prem/cloud environment.",
+        "Executive owner of security, compliance, and technology for a regulated mid-size financial services firm operating across hybrid on-prem and cloud.",
       bullets: [
-        "Program owner for SOC 2, HIPAA, and PCI, with executive accountability for audit outcomes, risk acceptance, and continuous improvement",
-        "Led multiple audits end-to-end with zero material findings; conducted quarterly vulnerability scans and pen tests with full remediation",
-        "Drove uptime from ~95% to 99.99%; led quarterly DR/BC testing with aggressive RPO/RTO targets",
-        "Built a defense-in-depth security program (IAM, SIEM, EDR, DLP, MFA, NGFW, PKI, 24×7 SOC); zero major incidents over 7 years",
-        "Scaled infrastructure and controls through significant organizational growth; led large-scale P2V, data center, cloud, OS, and app migrations",
-        "Reduced technology spend substantially through architecture rationalization and vendor consolidation",
-        "Directly supported enterprise and regulated-client revenue by owning technical RFPs, security questionnaires, and contract security terms",
-        "Perform regular vendor risk assessments; act as primary technical liaison for clients, auditors, and regulators",
-        "Delivered significant operational savings via automation (PowerShell, Python)",
-        "Hands-on expertise in AI systems, agentic workflows, and autonomous pipelines",
+        "Built the defense-in-depth security program from scratch across IAM, EDR, DLP, PKI, network security, and 24×7 SOC. Zero major incidents in seven years.",
+        "Stood up SOC 2 Type II, PCI-DSS, and HIPAA from nothing. Designed the control frameworks, authored the policy library, defined the audit scope. First-time certification on every program.",
+        "Passed 10+ audits end-to-end with zero material findings. Run quarterly vulnerability assessments and penetration tests with every finding tracked to closure.",
+        "Drove uptime from ~95% to 99.99%. Lead quarterly DR/BC testing against aggressive RPO and RTO targets.",
+        "Designed and shipped an AI compliance monitoring platform that replaced manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Closed the compliance blind spots sampling could never catch and gave managers hours back every week.",
+        "Trusted advisor to ownership on risk, organizational design, and operational efficiency across the business — not just the technology side.",
+        "Technical authority on proposals, RFPs, security questionnaires, and contract terms. Present directly to prospective regulated clients. Primary liaison to legal, auditors, and regulators.",
+        "Drove down technology spend through architecture rationalization and vendor consolidation, even as the company scaled through major growth.",
+        "Build AI ops tooling: agentic workflows that monitor, remediate, and report on their own. Anything risky still comes back for approval.",
       ],
     },
     {
       role: "IT Manager",
       company: "RTR Financial Services, Inc.",
-      period: "February 2017 – August 2019",
+      period: "2016 – August 2019",
       location: "Staten Island, NY",
       description: "",
       bullets: [
-        "Owned availability, security, patching, and compliance across all systems and networks",
-        "Designed and deployed enterprise domains, networks, servers, and security architecture",
-        "Automated IT operations with PowerShell/Python; led ransomware recovery during WannaCry",
+        "Led the WannaCry ransomware recovery with no DR plan, no golden images, and no documented procedures. Coordinated an ad-hoc response across internal team and outside vendors. Restored full operations in 48 hours.",
+        "Used the incident as the catalyst to stand up formal disaster recovery, business continuity, and security monitoring programs from scratch.",
+        "Owned availability, security, patching, and compliance across every enterprise system and network.",
       ],
     },
     {
-      role: "Support Technician",
-      company: "Online Computers",
-      period: "June 2016 – February 2017",
-      location: "Whippany, NJ",
-      description: "",
-      bullets: [],
-    },
-    {
-      role: "Support Technician",
+      role: "Infrastructure & Security Lead",
       company: "RTR Financial Services, Inc.",
-      period: "January 2012 – June 2016",
+      period: "2014 – 2016",
       location: "Staten Island, NY",
       description: "",
-      bullets: [],
+      bullets: [
+        "Designed and deployed enterprise domain architecture, network segmentation, server infrastructure, and the foundational security controls every program since has been built on.",
+        "Established PowerShell and Python as the automation default — the operating model the company would scale on.",
+      ],
+    },
+    {
+      role: "Systems Administrator",
+      company: "RTR Financial Services, Inc.",
+      period: "2012 – 2014",
+      location: "Staten Island, NY",
+      description: "",
+      bullets: [
+        "Assumed sole ownership of enterprise IT. Inherited a barely-managed network with no security controls and no documented policies.",
+      ],
     },
     {
       role: "Business Analyst",
       company: "RTR Financial Services, Inc.",
-      period: "August 2008 – January 2012",
+      period: "August 2008 – 2012",
       location: "Staten Island, NY",
       description: "",
-      bullets: [],
+      bullets: [
+        "Analyzed business processes and operational workflows across revenue-generating departments. The cross-functional fluency I built here later shaped how I approached technology and security.",
+      ],
     },
   ],
 
@@ -137,62 +152,53 @@ export const resumeData: ResumeData = {
     {
       name: "Security and Compliance",
       skills: [
-        "SOC 2",
+        "SOC 2 Type II",
+        "PCI-DSS",
         "HIPAA",
-        "PCI DSS",
         "Defense-in-Depth",
-        "IAM",
-        "SIEM",
-        "EDR",
-        "DLP",
-        "MFA",
-        "NGFW",
-        "PKI",
-        "Vulnerability Management",
-        "Pen Testing",
-        "Vendor Risk Assessment",
-        "Security Questionnaires",
+        "Policy Authoring",
+        "Audit Management",
+        "Vendor Risk",
         "Incident Response",
       ],
     },
     {
       name: "Infrastructure and Cloud",
       skills: [
-        "Hybrid Cloud (On-Prem/Cloud)",
-        "Data Center Operations",
+        "Hybrid Cloud",
+        "VDI / Remote Workforce",
+        "Disaster Recovery",
+        "Business Continuity",
         "VMware vSphere",
-        "Windows Server",
         "Active Directory",
-        "DNS/DHCP",
-        "Networking (Cisco)",
-        "Disaster Recovery/Business Continuity",
-        "P2V Migration",
+        "Network Architecture",
+        "Cloud Migration",
       ],
     },
     {
-      name: "Automation and Engineering",
+      name: "Engineering and Automation",
       skills: [
         "PowerShell",
         "Python",
+        "Infrastructure as Code",
         "CI/CD",
-        "Infrastructure as Code (IaC)",
-        "Kubernetes (k3s)",
+        "Kubernetes",
         "Docker",
         "AI Systems",
         "Agentic Workflows",
-        "Autonomous Pipelines",
       ],
     },
     {
-      name: "Leadership and Strategy",
+      name: "Executive Leadership",
       skills: [
-        "Technology Budget Management",
-        "Vendor Consolidation",
-        "Architecture Rationalization",
-        "Technical RFPs",
-        "Client/Auditor Relations",
-        "Team Scaling",
-        "Executive Reporting",
+        "Strategic Advisory",
+        "Budget Management",
+        "Vendor Negotiation",
+        "Organizational Scaling",
+        "Revenue Enablement",
+        "Team Leadership",
+        "Regulator Liaison",
+        "Operations Management",
       ],
     },
   ],
@@ -232,60 +238,84 @@ export const resumeData: ResumeData = {
 
   projects: [
     {
+      name: "Compliance Monitoring Platform",
+      description:
+        "AI platform that replaced manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Closed the compliance blind spots that sampling could never catch.",
+      technologies: "Python, Speech-to-Text, LLM APIs, Sentiment Analysis",
+    },
+    {
       name: "Homelab",
       description:
-        "Production-grade Kubernetes (k3s) cluster on ProxMox, fully GitOps-managed with Flux. Runs 25+ services including monitoring, automation, media, document management, and AI workloads on bare metal.",
+        "Production-grade k3s cluster on ProxMox, GitOps-managed with Flux. Runs 25+ services across monitoring, automation, media, document management, and AI workloads. Bare metal.",
       technologies: "ProxMox, k3s, Flux, Kube-Prometheus, Velero, Loki",
     },
     {
       name: "OpsMan",
       description:
-        "Semi-autonomous AI ops manager for the homelab. Watches the ProxMox + Kubernetes environment, runs approved Day-2 operations, journals everything, and pushes risky changes back for explicit approval.",
+        "Semi-autonomous AI ops manager for the homelab. Watches ProxMox and Kubernetes, runs approved Day-2 operations, logs everything. Anything risky comes back for approval.",
       technologies: "Python, ProxMox API, Kubernetes API, Pushover",
     },
   ],
 
   stack: [
-    { name: "PAI", category: "AI" },
-    { name: "GSD", category: "AI" },
-    { name: "Claude Code", category: "AI" },
-    { name: "ElevenLabs", category: "AI" },
-    { name: "LLM-Wiki", category: "AI" },
-    { name: "ProxMox", category: "Infrastructure" },
-    { name: "Kubernetes (k3s)", category: "Infrastructure" },
-    { name: "Docker", category: "Infrastructure" },
-    { name: "Flux CD", category: "Infrastructure" },
-    { name: "Komodo", category: "Infrastructure" },
-    { name: "Terraform", category: "Infrastructure" },
-    { name: "Ansible", category: "Infrastructure" },
-    { name: "Cloudflare", category: "Infrastructure" },
-    { name: "Kube-Prometheus Stack", category: "Monitoring" },
-    { name: "Grafana", category: "Monitoring" },
-    { name: "Loki", category: "Monitoring" },
-    { name: "Uptime Kuma", category: "Monitoring" },
-    { name: "Netdata", category: "Monitoring" },
-    { name: "Velero", category: "Operations" },
-    { name: "Kyverno", category: "Operations" },
-    { name: "Cert Manager", category: "Operations" },
-    { name: "Kopia", category: "Operations" },
-    { name: "Rclone", category: "Operations" },
-    { name: "Pushover", category: "Operations" },
-    { name: "Pi-hole", category: "Networking" },
-    { name: "Netbird", category: "Networking" },
-    { name: "Palo Alto", category: "Networking" },
-    { name: "Cisco", category: "Networking" },
-    { name: "Wazuh", category: "Security" },
-    { name: "SOPS", category: "Security" },
-    { name: "OpenVAS", category: "Security" },
-    { name: "NetAlertX", category: "Security" },
-    { name: "Maltrail", category: "Security" },
-    { name: "iTerm2", category: "Dev Tools" },
-    { name: "VS Code", category: "Dev Tools" },
-    { name: "Raycast", category: "Dev Tools" },
-    { name: "Oh My Zsh", category: "Dev Tools" },
-    { name: "Git", category: "Dev Tools" },
-    { name: "Cursor", category: "Dev Tools" },
-    { name: "Vim", category: "Dev Tools" },
-    { name: "tmux", category: "Dev Tools" },
+    {
+      name: "Claude Code",
+      category: "AI",
+      url: "https://www.anthropic.com/claude-code",
+    },
+    {
+      name: "PAI",
+      category: "AI",
+      url: "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+    },
+    {
+      name: "GSD",
+      category: "AI",
+      url: "https://github.com/open-gsd/get-shit-done-redux",
+    },
+    {
+      name: "LLM-Wiki",
+      category: "AI",
+      url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+    },
+  ],
+
+  press: [
+    {
+      publication: "AccountsRecovery.net",
+      date: "April 2026",
+      title: "AI 101: Back to the Basics",
+      url: "https://www.accountsrecovery.net/courses/ai-101-back-to-the-basics-from-04-02-2026/",
+    },
+    {
+      publication: "AccountsRecovery.net",
+      date: "December 2025",
+      title: "Getting to Know John Trotta of RTR Financial Services",
+      url: "https://www.accountsrecovery.net/2025/12/11/getting-to-know-john-trotta-of-rtr-financial-services/",
+    },
+    {
+      publication: "AccountsRecovery.net",
+      date: "March 2025",
+      title: "Teaching Prompt Engineering to Your Staff",
+      url: "https://www.accountsrecovery.net/courses/teaching-prompt-engineering-to-your-staff-from-3-5-2025/",
+    },
+    {
+      publication: "AccountsRecovery.net",
+      date: "January 2025",
+      title: "Using AI as a Research Tool and for Creation of Policies and Procedures",
+      url: "https://www.accountsrecovery.net/courses/using-ai-as-a-research-tool-and-for-creation-of-policies-and-procedures-from-1-7-2025/",
+    },
+    {
+      publication: "AccountsRecovery.net",
+      date: "November 2024",
+      title: "Artificial Intelligence: Empowering Human Agents for Better Efficiency",
+      url: "https://www.accountsrecovery.net/courses/artificial-intelligence-empowering-human-agents-for-better-efficiency-from-11-6-2024/",
+    },
+    {
+      publication: "AccountsRecovery.net",
+      date: "Archive",
+      title: "View all speaking engagements",
+      url: "https://www.accountsrecovery.net/course-tag/john-trotta/",
+    },
   ],
 };

@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
+import Press from "@/components/Press";
 import Skills from "@/components/Skills";
 import Certifications from "@/components/Certifications";
 import Education from "@/components/Education";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <Experience />
+        <Press />
         <Skills />
         <Certifications />
         <Education />

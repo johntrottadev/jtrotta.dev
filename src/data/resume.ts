@@ -94,7 +94,7 @@ export const resumeData: ResumeData = {
       bullets: [
         "Built the defense-in-depth security program from scratch across IAM, EDR, DLP, PKI, network security, and 24×7 SOC. Zero major incidents in seven years.",
         "Stood up SOC 2 Type II, PCI-DSS, and HIPAA from nothing. Designed the control frameworks, authored the policy library, defined the audit scope. First-time certification on every program.",
-        "Passed 10+ audits end-to-end with zero material findings. Run quarterly vulnerability assessments and penetration tests with every finding tracked to closure.",
+        "Passed 10+ audits end-to-end with zero material findings.",
         "Drove uptime from ~95% to 99.99%. Lead quarterly DR/BC testing against aggressive RPO and RTO targets.",
         "Designed and shipped an AI compliance monitoring platform that replaced manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Closed the compliance blind spots sampling could never catch and gave managers hours back every week.",
         "Trusted advisor to ownership on risk, organizational design, and operational efficiency across the business — not just the technology side.",

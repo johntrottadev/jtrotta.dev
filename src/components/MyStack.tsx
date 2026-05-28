@@ -1,25 +1,19 @@
 import { resumeData } from "@/data/resume";
 
 const categoryOrder = [
-  "AI",
-  "Infrastructure",
-  "Monitoring",
-  "Operations",
   "Security",
   "Networking",
-  "Dev Tools",
-  "Self-Hosted Apps",
+  "Infrastructure",
+  "Monitoring",
+  "AI",
 ];
 
 const categoryColors: Record<string, string> = {
-  AI: "bg-violet-100 text-violet-800 border-violet-200",
-  Infrastructure: "bg-blue-100 text-blue-800 border-blue-200",
-  Monitoring: "bg-amber-100 text-amber-800 border-amber-200",
-  Operations: "bg-emerald-100 text-emerald-800 border-emerald-200",
   Security: "bg-red-100 text-red-800 border-red-200",
   Networking: "bg-cyan-100 text-cyan-800 border-cyan-200",
-  "Dev Tools": "bg-slate-100 text-slate-800 border-slate-200",
-  "Self-Hosted Apps": "bg-rose-100 text-rose-800 border-rose-200",
+  Infrastructure: "bg-blue-100 text-blue-800 border-blue-200",
+  Monitoring: "bg-amber-100 text-amber-800 border-amber-200",
+  AI: "bg-violet-100 text-violet-800 border-violet-200",
 };
 
 export default function MyStack() {
@@ -34,12 +28,11 @@ export default function MyStack() {
     <section id="stack" className="py-6 sm:py-8 bg-section-bg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-          My Stack
+          Technology I Work With
         </h2>
         <p className="text-gray-600 mb-4 max-w-2xl">
-          What I work with day to day — the tools behind the infrastructure,
-          security, automation, and monitoring I manage professionally and at
-          home.
+          The tools behind the security, compliance, infrastructure, and
+          monitoring programs I run.
         </p>
 
         <div className="space-y-4">

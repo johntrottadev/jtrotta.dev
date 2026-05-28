@@ -238,6 +238,13 @@ export const resumeData: ResumeData = {
 
   projects: [
     {
+      name: "Compliance Monitoring Platform",
+      description:
+        "AI-powered platform that replaces manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Eliminates the blind spots that manual sampling leaves behind in regulated communication workflows.",
+      technologies:
+        "Python, Speech-to-Text, LLM APIs, Sentiment Analysis",
+    },
+    {
       name: "Homelab",
       description:
         "Production-grade Kubernetes (k3s) cluster on ProxMox, fully GitOps-managed with Flux. Runs 25+ services including monitoring, automation, media, document management, and AI workloads on bare metal.",
@@ -252,18 +259,21 @@ export const resumeData: ResumeData = {
   ],
 
   stack: [
-    { name: "Claude Code", category: "AI" },
+    { name: "QRadar", category: "Security" },
+    { name: "SentinelOne", category: "Security" },
+    { name: "ThreatLocker", category: "Security" },
+    { name: "KnowBe4", category: "Security" },
+    { name: "Wazuh", category: "Security" },
+    { name: "OpenVAS", category: "Security" },
+    { name: "SharePoint", category: "Security" },
+    { name: "Palo Alto", category: "Networking" },
+    { name: "Cisco", category: "Networking" },
     { name: "Kubernetes (k3s)", category: "Infrastructure" },
     { name: "Docker", category: "Infrastructure" },
     { name: "Terraform", category: "Infrastructure" },
     { name: "Ansible", category: "Infrastructure" },
     { name: "Kube-Prometheus Stack", category: "Monitoring" },
     { name: "Grafana", category: "Monitoring" },
-    { name: "Wazuh", category: "Security" },
-    { name: "OpenVAS", category: "Security" },
-    { name: "Palo Alto", category: "Networking" },
-    { name: "Cisco", category: "Networking" },
-    { name: "VS Code", category: "Dev Tools" },
-    { name: "Cursor", category: "Dev Tools" },
+    { name: "Claude Code", category: "AI" },
   ],
 };

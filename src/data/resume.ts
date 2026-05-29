@@ -82,7 +82,7 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "I build security and compliance programs where none exist, and they pass audits on the first try. I've done it in regulated financial services, from an empty network to a defense-in-depth operation with zero major incidents and a clean audit record across SOC 2, PCI, and HIPAA. I deploy AI systems that generate revenue and catch compliance failures before they become problems. I present to clients, close deals, advise ownership, and fix things that aren't in my job description. Operations management background, CISSP, and I still write code when it's the fastest path to the answer.",
+    "I build security and compliance programs where none exist, and they pass audits on the first try. I've done it in regulated financial services, from an empty network to a defense-in-depth operation with zero major incidents and a clean audit record across SOC 2, PCI, HIPAA, and NIST. I deploy AI systems that generate revenue and catch compliance failures before they become problems. I present to clients, close deals, advise ownership, and fix things that aren't in my job description. Operations management background, CISSP, and I still write code when it's the fastest path to the answer.",
 
   experience: [
     {
@@ -91,10 +91,10 @@ export const resumeData: ResumeData = {
       period: "August 2019 – Present",
       location: "Staten Island, NY",
       description:
-        "Executive owner of security, compliance, and technology for a regulated mid-size financial services firm operating across hybrid on-prem and cloud.",
+        "Executive owner of security, compliance, and technology for a regulated mid-size financial services firm operating across hybrid on-prem and cloud. Functioning as the organization's CISO with full accountability for security strategy, risk, and compliance.",
       bullets: [
         "Built the defense-in-depth security program from scratch across IAM, EDR, DLP, PKI, network security, and 24×7 SOC. Zero major incidents in seven years.",
-        "Stood up SOC 2 Type II, PCI-DSS, and HIPAA from nothing. Designed the control frameworks, authored the policy library, defined the audit scope. First-time certification on every program.",
+        "Stood up SOC 2 Type II, PCI-DSS, and HIPAA from nothing, all mapped to NIST CSF. Designed the control frameworks, authored the policy library, defined the audit scope. First-time certification on every program.",
         "Passed 10+ audits end-to-end with zero material findings.",
         "Drove uptime from ~95% to 99.99%. Lead quarterly DR/BC testing against aggressive RPO and RTO targets.",
         "Designed and shipped an AI compliance monitoring platform that replaced manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Closed the compliance blind spots sampling could never catch and gave managers hours back every week.",
@@ -156,6 +156,7 @@ export const resumeData: ResumeData = {
         "SOC 2 Type II",
         "PCI-DSS",
         "HIPAA",
+        "NIST CSF",
         "Security Program Leadership",
         "Policy Authoring",
         "Audit Management",

@@ -88,7 +88,7 @@ export const resumeData: ResumeData = {
     {
       role: "Chief Technology & Security Officer",
       company: "RTR Financial Services, Inc.",
-      period: "August 2019 – Present",
+      period: "August 2019 - Present",
       location: "Staten Island, NY",
       description:
         "Executive owner of security, compliance, and technology for a regulated mid-size financial services firm operating across hybrid on-prem and cloud. Functioning as the organization's CISO with full accountability for security strategy, risk, and compliance.",
@@ -107,7 +107,7 @@ export const resumeData: ResumeData = {
     {
       role: "IT Manager",
       company: "RTR Financial Services, Inc.",
-      period: "2016 – August 2019",
+      period: "2016 - August 2019",
       location: "Staten Island, NY",
       description: "",
       bullets: [
@@ -119,7 +119,7 @@ export const resumeData: ResumeData = {
     {
       role: "Infrastructure & Security Lead",
       company: "RTR Financial Services, Inc.",
-      period: "2014 – 2016",
+      period: "2014 - 2016",
       location: "Staten Island, NY",
       description: "",
       bullets: [
@@ -130,7 +130,7 @@ export const resumeData: ResumeData = {
     {
       role: "Systems Administrator",
       company: "RTR Financial Services, Inc.",
-      period: "2012 – 2014",
+      period: "2012 - 2014",
       location: "Staten Island, NY",
       description: "",
       bullets: [
@@ -140,7 +140,7 @@ export const resumeData: ResumeData = {
     {
       role: "Business Analyst",
       company: "RTR Financial Services, Inc.",
-      period: "August 2008 – 2012",
+      period: "August 2008 - 2012",
       location: "Staten Island, NY",
       description: "",
       bullets: [

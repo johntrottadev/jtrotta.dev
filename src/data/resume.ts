@@ -41,6 +41,7 @@ export interface Project {
   name: string;
   description: string;
   technologies: string;
+  url?: string;
 }
 
 export interface StackItem {
@@ -248,12 +249,14 @@ export const resumeData: ResumeData = {
       description:
         "Production-grade k3s cluster on ProxMox, GitOps-managed with Flux. Runs 25+ services across monitoring, automation, media, document management, and AI workloads. Bare metal.",
       technologies: "ProxMox, k3s, Flux, Kube-Prometheus, Velero, Loki",
+      url: "https://github.com/johntrottadev/homelab",
     },
     {
       name: "OpsMan",
       description:
         "Semi-autonomous AI ops manager for the homelab. Watches ProxMox and Kubernetes, runs approved Day-2 operations, logs everything. Anything risky comes back for approval.",
       technologies: "Python, ProxMox API, Kubernetes API, Pushover",
+      url: "https://github.com/johntrottadev/opsman",
     },
   ],
 

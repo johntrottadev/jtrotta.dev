@@ -98,7 +98,7 @@ export const resumeData: ResumeData = {
         "Passed 10+ audits end-to-end with zero material findings.",
         "Drove uptime from ~95% to 99.99%. Lead quarterly DR/BC testing against aggressive RPO and RTO targets.",
         "Designed and shipped an AI compliance monitoring platform that replaced manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Closed the compliance blind spots sampling could never catch and gave managers hours back every week.",
-        "Trusted advisor to ownership on risk, organizational design, and operational efficiency across the business — not just the technology side.",
+        "Trusted advisor to ownership on risk, organizational design, and operational efficiency across the business, not just the technology side.",
         "Technical authority on proposals, RFPs, security questionnaires, and contract terms. Present directly to prospective regulated clients. Primary liaison to legal, auditors, and regulators.",
         "Drove down technology spend through architecture rationalization and vendor consolidation, even as the company scaled through major growth.",
         "Build AI ops tooling: agentic workflows that monitor, remediate, and report on their own. Anything risky still comes back for approval.",
@@ -124,7 +124,7 @@ export const resumeData: ResumeData = {
       description: "",
       bullets: [
         "Designed and deployed enterprise domain architecture, network segmentation, server infrastructure, and the foundational security controls every program since has been built on.",
-        "Established PowerShell and Python as the automation default — the operating model the company would scale on.",
+        "Established PowerShell and Python as the automation default. The operating model the company would scale on.",
       ],
     },
     {

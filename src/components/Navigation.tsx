@@ -29,7 +29,7 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || mobileMenuOpen
           ? "bg-hero-bg/95 backdrop-blur-sm shadow-lg"
           : "bg-transparent"
       }`}
@@ -92,12 +92,12 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden border-t border-white/10 pt-2 pb-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-slate-300 hover:text-white text-sm font-medium transition-colors"
+                className="block py-3 text-slate-300 hover:text-white text-sm font-medium transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}

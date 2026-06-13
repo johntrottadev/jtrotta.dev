@@ -1,0 +1,62 @@
+import { resumeData } from "@/data/resume";
+
+export default function Contact() {
+  const { contact } = resumeData;
+
+  return (
+    <footer id="contact" className="bg-hero-bg text-white py-6 sm:py-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4">Get in Touch</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div>
+            <h3 className="text-sm font-medium text-slate-400 uppercase tracking-wider mb-2">
+              Email
+            </h3>
+            <a
+              href={`mailto:${contact.email}`}
+              className="text-accent hover:text-white transition-colors"
+            >
+              {contact.email}
+            </a>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-medium text-slate-400 uppercase tracking-wider mb-2">
+              Location
+            </h3>
+            <p className="text-slate-300">{contact.location}</p>
+          </div>
+        </div>
+
+        {/* Links row */}
+        <div className="flex flex-wrap gap-4 mb-6">
+          <a
+            href={contact.linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 hover:text-white transition-colors text-sm"
+          >
+            {contact.linkedin}
+          </a>
+          <a
+            href={contact.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 hover:text-white transition-colors text-sm"
+          >
+            {contact.github}
+          </a>
+        </div>
+
+        {/* Divider and copyright */}
+        <div className="border-t border-white/10 pt-8">
+          <p className="text-sm text-slate-500">
+            &copy; {new Date().getFullYear()} {contact.name}. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

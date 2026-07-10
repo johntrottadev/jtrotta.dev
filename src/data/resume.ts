@@ -82,7 +82,7 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "I've spent 17 years in regulated financial services building new products, growing existing ones, and streamlining operations along the way. I ship AI products that generate revenue and uncover cost savings, and I migrate legacy systems to AI-driven workflows. I stand up security and compliance programs that take companies from zero to fully compliant while minimizing friction between stakeholders and third parties. I'm in the room with ownership on strategy and in front of clients to close deals. I take on projects of all shapes and sizes, in harmonious and hostile environments alike. Operations background, CISSP, daily user of agentic AI, and I still write code when it's the fastest path to the answer.",
+    "I've spent 17 years in regulated financial services across technology, security, and operations. I design and review security controls, assess cyber and third-party risk, and partner with engineers to architect systems that pass audits without slowing the business: SOC 2 Type II, PCI-DSS, and HIPAA stood up from nothing and mapped to NIST CSF, 10+ audits passed with zero material findings, zero major incidents over eight years. I also build. AI products that carry real revenue, compliance monitoring that replaced manual spot-checks with full coverage, and the secure data flows a 300-person firm runs on. I'm the technical voice to ownership, clients, legal, and regulators on risk acceptance, control strategy, and emerging technology. Operations background, CISSP, daily user of agentic AI, and I still write code when it's the fastest path to the answer.",
 
   experience: [
     {

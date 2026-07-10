@@ -72,7 +72,7 @@ export interface ResumeData {
 export const resumeData: ResumeData = {
   contact: {
     name: "John Trotta",
-    title: "I ship revenue-generating products and systems, AI or not.",
+    title: "I design and build technology, security, and AI programs for regulated industries.",
     location: "NY / NJ",
     email: "johntrottadev@gmail.com",
     linkedin: "linkedin.com/in/johntrotta1",

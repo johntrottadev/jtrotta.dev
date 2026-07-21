@@ -82,7 +82,7 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "I've spent 17 years in regulated financial services across technology, security, and operations. I design and review security controls, assess cyber and third-party risk, and partner with engineers to architect systems that pass audits without slowing the business: SOC 2 Type II, PCI-DSS, and HIPAA stood up from nothing and mapped to NIST CSF, 10+ audits passed with zero material findings, zero major incidents over eight years. And I still build: AI products that carry real revenue, compliance monitoring that replaced manual spot-checks with full coverage, and the secure data flows a 300-person firm runs on. I'm the technical voice to ownership, clients, legal, and regulators on risk acceptance, control strategy, and emerging technology. Operations background, CISSP, daily user of agentic AI, and I still write code when it's the fastest path to the answer.",
+    "I've spent 17 years in regulated financial services across technology, security, and operations. I design and review security controls, assess cyber and third-party risk, and partner with engineers to architect systems that pass audits without slowing the business: SOC 2 Type II, PCI-DSS, and HIPAA stood up from nothing and mapped to NIST CSF, 10+ audits passed with zero material findings, zero major incidents over eight years. And I still build: AI products that carry real revenue, compliance monitoring that replaced manual spot-checks with full coverage, and the secure data flows a 300-person firm runs on. I'm the technical voice to ownership, clients, legal, and regulators on risk acceptance, control strategy, and emerging technology. Operations background, CISSP and PMP, daily user of agentic AI, and I still write code when it's the fastest path to the answer.",
 
   experience: [
     {
@@ -223,7 +223,7 @@ export const resumeData: ResumeData = {
     {
       name: "Project Management Professional",
       abbreviation: "PMP",
-      detail: "PMI, in progress (2026)",
+      detail: "PMI",
     },
     {
       name: "VMware Certified Professional",

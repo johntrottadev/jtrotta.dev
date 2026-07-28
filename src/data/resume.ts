@@ -82,7 +82,7 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "I've spent 17 years in regulated financial services across technology, security, and operations. I design and review security controls, assess cyber and third-party risk, and partner with engineers to architect systems that pass audits without slowing the business: SOC 2 Type II, PCI-DSS, and HIPAA stood up from nothing and mapped to NIST CSF, 10+ audits passed with zero material findings, zero major incidents over eight years. And I still build: AI products that carry real revenue, compliance monitoring that replaced manual spot-checks with full coverage, and the secure data flows a 300-person firm runs on. I'm the technical voice to ownership, clients, legal, and regulators on risk acceptance, control strategy, and emerging technology. Operations background, CISSP and PMP, daily user of agentic AI, and I still write code when it's the fastest path to the answer.",
+    "I've spent 17 years in regulated financial services running security and technology programs end to end: strategy, execution, and the cross-functional coordination in between. I stood up PCI-DSS and SOC 2 Type II with HIPAA from nothing — first-time certification on each, mapped to NIST CSF, 10+ audits passed with zero material findings, zero major incidents over eight years. That work is security program execution: control rollouts across engineering and operations, third-party and vendor coordination, executive reporting to ownership, clients, legal, and regulators, and real-time trade-offs between security, delivery speed, and what the business can absorb. And I automate the work with LLMs: AI products that carry real revenue, compliance monitoring that replaced manual spot-checks with full coverage, and agentic workflows that run operations on their own. Operations background, CISSP and PMP, daily user of agentic AI, and I still write code when it's the fastest path to the answer.",
 
   experience: [
     {
@@ -93,14 +93,14 @@ export const resumeData: ResumeData = {
       description:
         "Own technology, product, and operational systems for a regulated mid-size financial services firm running across hybrid on-prem and cloud. Full accountability for what gets built, how it runs, and the security and compliance behind it.",
       bullets: [
-        "Conceived and built an AI phone system that turned a manual call workflow into a self-service revenue channel now worth an estimated 10% of company revenue. Thousands of calls a day, routed and handled automatically.",
-        "Built and own an AI call-monitoring platform across 65+ agents and thousands of daily calls: logging, sentiment, and automatic verification of required legal disclosures and consent, replacing manual spot-checks with full coverage and giving managers a real-time view they never had.",
+        "Designed an AI phone system that turned a manual call workflow into a self-service revenue channel now worth an estimated 10% of company revenue, managing vendor development from conception to deployment. Thousands of calls a day, routed and handled automatically.",
+        "Designed an AI call-monitoring platform across 65+ agents and thousands of daily calls: logging, sentiment, and automatic verification of required legal disclosures and consent, replacing manual spot-checks with full coverage and giving managers a real-time view they never had.",
         "Build AI ops tooling: agentic workflows that monitor, remediate, and report on their own, with anything risky routed back for approval.",
         "Built the secure data flows the business runs on: site-to-site VPNs across data centers, API connections from internet-facing systems into isolated back ends, API and FTP transfers, and BI wired straight to production databases, all change-managed and auditable.",
         "The technical voice to ownership, clients, legal, and regulators: turn vague business problems into things that ship, and carry the proposals, RFPs, and security reviews that underpinned more than $10M in regulated-client revenue.",
         "Automated 80 to 100 hours of manual work a month across clerical, operations, and compliance, and cut technology spend roughly 30% through architecture rationalization and vendor consolidation while the business grew fourfold.",
         "Built the company's first real disaster recovery and continuity and drove uptime to 99.99%, scaled the environment from 75 to 300 employees, and moved to multi-state remote operations in a week when COVID hit, opening up 8+ states.",
-        "Stood up the company's security and compliance from nothing: SOC 2 Type II, PCI-DSS, and HIPAA, first-time certification on each, zero major incidents in eight years.",
+        "Stood up the company's security and compliance from nothing: PCI-DSS and SOC 2 Type II with HIPAA controls in scope, first-time certification on each, zero major incidents in eight years.",
       ],
     },
     {
@@ -156,6 +156,7 @@ export const resumeData: ResumeData = {
         "Workflow Automation",
         "Requirements & Specs",
         "Instrumentation & Metrics",
+        "SQL & BI Reporting",
         "Telephony & Comms Systems",
         "Build vs. Buy",
       ],

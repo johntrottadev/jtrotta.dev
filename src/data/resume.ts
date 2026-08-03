@@ -93,14 +93,13 @@ export const resumeData: ResumeData = {
       description:
         "Own technology, product, and operational systems for a regulated mid-size financial services firm running across hybrid on-prem and cloud. Full accountability for what gets built, how it runs, and the security and compliance behind it.",
       bullets: [
-        "Designed an AI phone system that turned a manual call workflow into a self-service revenue channel now worth an estimated 10% of company revenue, managing vendor development from conception to deployment. Thousands of calls a day, routed and handled automatically.",
-        "Designed an AI call-monitoring platform across 65+ agents and thousands of daily calls: logging, sentiment, and automatic verification of required legal disclosures and consent, replacing manual spot-checks with full coverage and giving managers a real-time view they never had.",
-        "Build AI ops tooling: agentic workflows that monitor, remediate, and report on their own, with anything risky routed back for approval.",
-        "Built the secure data flows the business runs on: site-to-site VPNs across data centers, API connections from internet-facing systems into isolated back ends, API and FTP transfers, and BI wired straight to production databases, all change-managed and auditable.",
-        "The technical voice to ownership, clients, legal, and regulators: turn vague business problems into things that ship, and carry the proposals, RFPs, and security reviews that underpinned more than $10M in regulated-client revenue.",
-        "Automated 80 to 100 hours of manual work a month across clerical, operations, and compliance, and cut technology spend roughly 30% through architecture rationalization and vendor consolidation while the business grew fourfold.",
         "Built the company's first real disaster recovery and continuity and drove uptime to 99.99%, scaled the environment from 75 to 300 employees, and moved to multi-state remote operations in a week when COVID hit, opening up 8+ states.",
         "Stood up the company's security and compliance from nothing: PCI-DSS and SOC 2 Type II with HIPAA controls in scope, first-time certification on each, zero major incidents in eight years.",
+        "Automated 80 to 100 hours of manual work a month across clerical, operations, and compliance, and cut technology spend roughly 30% through architecture rationalization and vendor consolidation while the business grew fourfold.",
+        "Designed an AI phone system that turned a manual call workflow into a self-service revenue channel now worth an estimated 10% of company revenue, managing vendor development from conception to deployment. Thousands of calls a day, routed and handled automatically.",
+        "Designed an AI call-monitoring platform across 65+ agents and thousands of daily calls: logging, sentiment, and automatic verification of required legal disclosures and consent, replacing manual spot-checks with full coverage and giving managers a real-time view they never had.",
+        "Built the secure data flows the business runs on: site-to-site VPNs across data centers, API connections from internet-facing systems into isolated back ends, API and FTP transfers, and BI wired straight to production databases, all change-managed and auditable.",
+        "The technical voice to ownership, clients, legal, and regulators: turn vague business problems into things that ship, and carry the proposals, RFPs, and security reviews that underpinned more than $10M in regulated-client revenue.",
       ],
     },
     {
@@ -110,7 +109,8 @@ export const resumeData: ResumeData = {
       location: "Staten Island, NY",
       description: "",
       bullets: [
-        "Ran the WannaCry ransomware recovery with no DR plan in place, pulling together internal staff and vendors to restore full operations in 48 hours.",
+        "Ran the endpoint recovery when WannaCry hit: the incident plan covered servers and data only, with nothing for endpoints. Built a minimum-viable image carrying the tactical software the business needed, deployed it across several hundred PCs, and malware-scanned each machine before rejoining it to the domain. Full operations restored in 48 hours.",
+        "Inherited a technology program that had been owned for years by a single outside consultant and began insourcing it, taking the environment over top down and rebuilding it in-house. That restructuring is what the CTSO role was created out of when the consultant wound down his practice in 2019.",
         "Owned availability, security, patching, and compliance across every enterprise system.",
       ],
     },
@@ -130,9 +130,7 @@ export const resumeData: ResumeData = {
       period: "2012 - 2014",
       location: "Staten Island, NY",
       description: "",
-      bullets: [
-        "Administered the company's core systems day to day, keeping a lean environment running under the IT manager who owned the network.",
-      ],
+      bullets: [],
     },
     {
       role: "Business Analyst",
@@ -140,9 +138,7 @@ export const resumeData: ResumeData = {
       period: "August 2008 - 2012",
       location: "Staten Island, NY",
       description: "",
-      bullets: [
-        "Worked across reporting systems, analytics, and business processes to measure and improve operations.",
-      ],
+      bullets: [],
     },
   ],
 

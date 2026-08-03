@@ -82,7 +82,7 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "I've spent 17 years in regulated financial services running security and technology programs end to end: strategy, execution, and the cross-functional coordination in between. I stood up PCI-DSS and SOC 2 Type II with HIPAA from nothing — first-time certification on each, mapped to NIST CSF, 10+ audits passed with zero material findings, zero major incidents over eight years. That work is security program execution: control rollouts across engineering and operations, third-party and vendor coordination, executive reporting to ownership, clients, legal, and regulators, and real-time trade-offs between security, delivery speed, and what the business can absorb. And I automate the work with LLMs: AI products that carry real revenue, compliance monitoring that replaced manual spot-checks with full coverage, and agentic workflows that run operations on their own. Operations background, CISSP and PMP, daily user of agentic AI, and I still write code when it's the fastest path to the answer.",
+    "I've spent 18 years in regulated financial services running security and technology programs end to end: strategy, execution, and the cross-functional coordination in between. I stood up PCI-DSS and SOC 2 Type II with HIPAA from nothing — first-time certification on each, mapped to NIST CSF, 10+ audits passed with zero material findings, zero major incidents over eight years. That work is security program execution: control rollouts across engineering and operations, third-party and vendor coordination, executive reporting to ownership, clients, legal, and regulators, and real-time trade-offs between security, delivery speed, and what the business can absorb. And I automate the work with LLMs: AI products that carry real revenue, compliance monitoring that replaced manual spot-checks with full coverage, and agentic workflows that run operations on their own. Operations background, CISSP and PMP, daily user of agentic AI, and I still write code when it's the fastest path to the answer.",
 
   experience: [
     {
@@ -257,7 +257,7 @@ export const resumeData: ResumeData = {
     {
       name: "AI Phone System (IVR)",
       description:
-        "An AI-driven phone system that turned a manual, rules-based call workflow into a self-service revenue channel. Handles thousands of calls a day with routing, self-service, and follow-up. Contributes an estimated 10%+ of company revenue.",
+        "An AI-driven phone system that turned a manual, rules-based call workflow into a self-service revenue channel. Handles thousands of calls a day with routing, self-service, and follow-up. Contributes an estimated 10% of company revenue.",
       technologies: "Cloud Telephony, SIP, Python, LLM APIs, Speech-to-Text",
     },
     {

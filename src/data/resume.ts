@@ -165,6 +165,9 @@ export const resumeData: ResumeData = {
         "HIPAA",
         "NIST CSF",
         "Security Program Leadership",
+        "Zero Trust Architecture",
+        "Identity & Access Management",
+        "AI Governance",
         "Policy Authoring",
         "Audit Management",
         "Third-Party Risk Management",
@@ -176,6 +179,7 @@ export const resumeData: ResumeData = {
       skills: [
         "Hybrid Cloud Strategy",
         "Cloud Migration",
+        "Kubernetes & Containers",
         "VDI & Remote Workforce",
         "Disaster Recovery",
         "Business Continuity",

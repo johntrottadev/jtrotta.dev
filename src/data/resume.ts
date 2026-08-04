@@ -91,7 +91,7 @@ export const resumeData: ResumeData = {
       period: "August 2019 - Present",
       location: "Staten Island, NY",
       description:
-        "Functioning as the company's CISO under a Chief Technology & Security Officer title. Run technology, security, and compliance for a 300-employee, $40M+ revenue firm running across hybrid on-prem and cloud: decide what gets built, build it with the team, and own how it runs. Manage a $2M annual budget and report to ownership.",
+        "Functioning as the company's CISO under a Chief Technology & Security Officer title. Run technology, security, and compliance for a 300-employee regulated financial services firm running across hybrid on-prem and cloud: decide what gets built, build it with the team, and own how it runs. Own the technology budget and report to ownership.",
       bullets: [
         "Built the company's first real disaster recovery and continuity and drove uptime to 99.99%, scaled the environment from 75 to 300 employees, and moved to multi-state remote operations in a week when COVID hit, opening up 8+ states.",
         "Stood up the company's security and compliance from nothing: PCI-DSS and SOC 2 Type II with HIPAA controls in scope, first-time certification on each, 10+ audits passed with zero material findings, zero major incidents in eight years.",
@@ -99,7 +99,7 @@ export const resumeData: ResumeData = {
         "Designed an AI phone system that turned a manual call workflow into a self-service revenue channel now worth an estimated 10% of company revenue, managing vendor development from conception to deployment. Thousands of calls a day, routed and handled automatically.",
         "Designed an AI call-monitoring platform across 65+ agents and thousands of daily calls: logging, sentiment, and automatic verification of required legal disclosures and consent, replacing manual spot-checks with full coverage and giving managers a real-time view they never had.",
         "Built the secure data flows the business runs on: site-to-site VPNs across data centers, API connections from internet-facing systems into isolated back ends, API and FTP transfers, and BI wired straight to production databases, all change-managed and auditable.",
-        "The technical voice to ownership, clients, legal, and regulators: turn vague business problems into things that ship, and carry the proposals, RFPs, and security reviews that underpinned more than $10M in regulated-client revenue.",
+        "The technical voice to ownership, clients, legal, and regulators: turn vague business problems into things that ship, and carry the proposals, RFPs, and security reviews that underpinned eight-figure regulated-client revenue.",
       ],
     },
     {

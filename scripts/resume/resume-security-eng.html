@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>John Trotta Resume — Security Engineering</title>
+<style>
+  /* Single sizing knob: all font sizes are rem multiples of this root. */
+  html { font-size: 10.7px; }
+
+  @page { size: Letter; margin: 0.42in 0.5in; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.74rem;
+    font-weight: 800;
+    color: #1a2230;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .subtitle { color: #2c5282; font-weight: 700; font-size: 1.23rem; margin: 2px 0 5px; }
+  .contact { color: #555; font-size: 1rem; margin-bottom: 9px; }
+  .section-title {
+    color: #2c5282;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 2.5px;
+    margin: 12px 0 5px;
+  }
+  p { margin: 0; }
+  .summary { font-size: 1rem; line-height: 1.45; }
+  .competencies { font-size: 1rem; line-height: 1.5; }
+  .role-header { display: flex; justify-content: space-between; align-items: baseline; margin-top: 8px; }
+  .role-title { font-weight: 700; color: #1a2230; font-size: 1.06rem; }
+  .role-meta { color: #666; font-size: 0.92rem; white-space: nowrap; padding-left: 12px; }
+  .role-intro { font-size: 1rem; margin: 2px 0 3px; }
+  ul { margin: 2px 0 0; padding-left: 15px; }
+  li { margin-bottom: 2.4px; line-height: 1.4; }
+  .block { font-size: 1rem; line-height: 1.45; }
+  .cert-pursuing { font-style: italic; color: #555; }
+  strong { color: #1a2230; }
+</style>
+</head>
+<body>
+  <h1>John Trotta, <strong>CISSP</strong>, <strong>PMP</strong></h1>
+  <div class="subtitle">Security Engineering &amp; Architecture</div>
+  <div class="contact">NY / NJ | 917-355-3252 | johntrottadev@gmail.com | linkedin.com/in/johntrotta1 | github.com/johntrottadev</div>
+
+  <p class="summary">Security and infrastructure engineer with 18 years in regulated financial services, hands-on through today. I design the systems I am accountable for and build them with the team: zero trust across identity, network, device, and data for a 300-employee firm; a two-zone architecture for an AI phone system where the model never touches cardholder data; site-to-site VPNs across data centers and API bridges from internet-facing systems into isolated back ends. I standardized automation on PowerShell and Python, ran the endpoint recovery when WannaCry hit, and built PCI-DSS and SOC 2 Type II from zero, 10+ audits with zero material findings. Outside work I run a production-grade Kubernetes lab on GitOps, and I still write code when it is the fastest path to the answer.</p>
+
+  <div class="section-title">Technical Skills</div>
+  <p class="competencies">Zero Trust architecture &amp; network segmentation · Identity &amp; access management · Kubernetes &amp; container security · Infrastructure as code &amp; GitOps · PowerShell &amp; Python automation · VPN, firewall &amp; network security · Incident response, DR &amp; continuity · Vulnerability &amp; patch management · Security monitoring &amp; observability · Hybrid cloud &amp; virtualization · API &amp; data-flow security · LLM &amp; agentic system security · PCI-DSS, SOC 2 Type II, HIPAA, NIST CSF</p>
+
+  <div class="section-title">Experience</div>
+
+  <div class="role-header">
+    <span class="role-title">Chief Technology &amp; Security Officer | RTR Financial Services, Inc.</span>
+    <span class="role-meta">August 2019 - Present | Staten Island, NY</span>
+  </div>
+  <p class="role-intro">Own security architecture and engineering for a 300-employee regulated financial services firm running across hybrid on-prem and cloud. Design it, build it with the team, and run it.</p>
+  <ul>
+    <li>Designed and implemented company-wide zero trust across identity, network, device, application, and data, treating each entry point as its own pillar with defense in depth and everything in, out, and in between monitored.</li>
+    <li>Architected the two-zone design behind an AI phone system so the model layer never touches cardholder data, keeping thousands of calls a day inside PCI scope boundaries. Managed vendor development from conception to deployment.</li>
+    <li>Built the secure data flows the business runs on: site-to-site VPNs across data centers, API connections from internet-facing systems into isolated back ends, API and FTP transfers, and BI wired straight to production databases, all change-managed and auditable.</li>
+    <li>Built the company's first real disaster recovery and continuity and drove uptime to 99.99%, scaled the environment from 75 to 300 employees, and moved to multi-state remote operations in a week when COVID hit.</li>
+    <li>Stood up security and compliance from nothing: PCI-DSS and SOC 2 Type II with HIPAA controls in scope, first-time certification on each, zero major incidents in eight years.</li>
+    <li>Designed an AI call-monitoring platform across 65+ agents and thousands of daily calls, replacing manual spot-checks with full-population coverage of logging, sentiment, and automatic verification of required disclosures.</li>
+    <li>Automated 80 to 100 hours of manual work a month across clerical, operations, and compliance, and took roughly $200K out of the $2M technology budget through licensing downgrades, open-source conversions, and equipment repurposing.</li>
+  </ul>
+
+  <div class="role-header">
+    <span class="role-title">IT Manager | RTR Financial Services, Inc.</span>
+    <span class="role-meta">2016 - August 2019 | Staten Island, NY</span>
+  </div>
+  <ul>
+    <li>Ran the endpoint recovery when WannaCry hit, with an incident plan that covered servers and data only: built a minimum-viable image, deployed it across several hundred PCs, and malware-scanned each machine before rejoining the domain. Full operations restored in 48 hours.</li>
+    <li>Inherited a technology program owned for years by an outside consultant and insourced it, rebuilding the environment in-house.</li>
+    <li>Owned availability, security, patching, and compliance across every enterprise system.</li>
+  </ul>
+
+  <div class="role-header">
+    <span class="role-title">Infrastructure &amp; Security Lead | RTR Financial Services, Inc.</span>
+    <span class="role-meta">2014 - 2016 | Staten Island, NY</span>
+  </div>
+  <ul>
+    <li>Transformed how the existing environment was used: reworked current tools, standardized automation with PowerShell and Python, added new systems as extensions to what was already in place, and built the procedures to meet new client requirements.</li>
+  </ul>
+
+  <div class="role-header">
+    <span class="role-title">Systems Administrator | RTR Financial Services, Inc.</span>
+    <span class="role-meta">2012 - 2014 | Staten Island, NY</span>
+  </div>
+
+  <div class="role-header">
+    <span class="role-title">Business Analyst | RTR Financial Services, Inc.</span>
+    <span class="role-meta">August 2008 - 2012 | Staten Island, NY</span>
+  </div>
+
+  <div class="section-title">Engineering &amp; Lab</div>
+  <p class="block"><strong>Homelab</strong> — production-grade k3s Kubernetes on ProxMox, GitOps via Flux, 25+ services, Kube-Prometheus and Loki observability, Velero backup. <strong>OpsMan</strong> — semi-autonomous AI operations manager with human-in-the-loop approval on risky actions. github.com/johntrottadev</p>
+
+  <div class="section-title">Education</div>
+  <p class="block"><strong>CUNY Baruch College, Zicklin School of Business</strong> | New York, NY<br>Bachelor of Business Administration, Operations Management</p>
+
+  <div class="section-title">Certifications</div>
+  <p class="block"><strong>CISSP</strong> (ISC2, #928259) · <strong>PMP</strong> (PMI, #9852796) · VMware VCP · Microsoft MCSE · Cisco CCNA</p>
+</body>
+</html>

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "resume:pdf": "bun scripts/resume/print.ts"
+    "resume:pdf": "bun scripts/resume/print.ts",
+    "resume:check": "bun scripts/resume/check.ts"
   },
   "dependencies": {
     "react": "^18",

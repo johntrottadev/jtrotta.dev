@@ -1,11 +1,14 @@
 #!/usr/bin/env bun
 /**
- * Regenerate the one-page resume PDF from resume.html via headless Chrome.
+ * Regenerate a one-page resume PDF from a variant's HTML via headless Chrome.
  *
- *   bun run resume:pdf                 # writes to ~/Downloads/John_Trotta_Senior_Product_Manager.pdf
- *   bun run resume:pdf ./out.pdf       # writes to a custom path
+ *   bun run resume:pdf                        # default variant (tpm-security)
+ *   bun run resume:pdf security-eng           # a specific variant
+ *   bun run resume:pdf all                    # every variant
+ *   bun run resume:pdf infra-tpm ./out.pdf    # custom output path
  *
- * Edit resume.html (same directory) to change content, then rerun.
+ * Variants are lane-targeted: same person and same facts, different ordering
+ * and emphasis. Edit the matching resume-<variant>.html to change content.
  * Chrome binary can be overridden with CHROME_BIN.
  */
 import { rmSync } from "node:fs";
@@ -19,37 +22,35 @@ const CHROME =
   process.env.CHROME_BIN ??
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 
-const html = join(scriptDir, "resume.html");
-const out = resolve(
-  process.argv[2] ??
-    join(homedir(), "Downloads", "John_Trotta_Senior_Product_Manager.pdf"),
-);
+interface Variant {
+  html: string;
+  pdf: string;
+  label: string;
+}
+
+const VARIANTS: Record<string, Variant> = {
+  "tpm-security": {
+    html: "resume-tpm-security.html",
+    pdf: "John_Trotta_Resume_TPM_Security.pdf",
+    label: "TPM & security leadership",
+  },
+  "security-eng": {
+    html: "resume-security-eng.html",
+    pdf: "John_Trotta_Resume_Security_Engineering.pdf",
+    label: "Security engineering (technical)",
+  },
+  "infra-tpm": {
+    html: "resume-infra-tpm.html",
+    pdf: "John_Trotta_Resume_Infrastructure_TPM.pdf",
+    label: "Infrastructure / engineering TPM (compliance-neutral)",
+  },
+};
+
+const DEFAULT_VARIANT = "tpm-security";
+
 // Persistent profile: reused across runs so Chrome skips first-run profile
 // setup. One-shot print exits cleanly, so there's no lock to worry about.
 const profile = join("/tmp", "chrome-resume-profile");
-
-// Clear stale singleton locks left by a previously killed Chrome, so the
-// reused profile doesn't refuse to launch.
-for (const f of ["SingletonLock", "SingletonSocket", "SingletonCookie"]) {
-  rmSync(join(profile, f), { force: true });
-}
-
-// Start fresh so we can detect when this run finishes writing.
-rmSync(out, { force: true });
-
-const proc = Bun.spawn(
-  [
-    CHROME,
-    "--headless=new",
-    "--disable-gpu",
-    "--no-first-run",
-    "--no-pdf-header-footer",
-    `--user-data-dir=${profile}`,
-    `--print-to-pdf=${out}`,
-    `file://${html}`,
-  ],
-  { stderr: "pipe" },
-);
 
 // Chrome --headless=new writes the PDF but often does NOT exit on its own here,
 // so don't await proc.exited. Instead poll until the PDF is written and its
@@ -74,15 +75,78 @@ async function waitForStableFile(path: string, timeoutMs: number): Promise<boole
   return false;
 }
 
-const ok = await waitForStableFile(out, 30_000);
+async function print(name: string, outOverride?: string): Promise<boolean> {
+  const variant = VARIANTS[name]!;
+  const html = join(scriptDir, variant.html);
 
-// Terminate Chrome (main process + any helpers bound to this profile).
-proc.kill();
-Bun.spawnSync(["pkill", "-9", "-f", `user-data-dir=${profile}`]);
+  if (!(await Bun.file(html).exists())) {
+    console.error(`Failed: ${variant.html} not found in ${scriptDir}`);
+    return false;
+  }
 
-if (!ok) {
-  console.error("Failed: PDF not written within timeout.");
-  console.error(await new Response(proc.stderr).text());
+  const out = resolve(outOverride ?? join(homedir(), "Downloads", variant.pdf));
+
+  // Clear stale singleton locks left by a previously killed Chrome, so the
+  // reused profile doesn't refuse to launch.
+  for (const f of ["SingletonLock", "SingletonSocket", "SingletonCookie"]) {
+    rmSync(join(profile, f), { force: true });
+  }
+
+  // Start fresh so we can detect when this run finishes writing.
+  rmSync(out, { force: true });
+
+  const proc = Bun.spawn(
+    [
+      CHROME,
+      "--headless=new",
+      "--disable-gpu",
+      "--no-first-run",
+      "--no-pdf-header-footer",
+      `--user-data-dir=${profile}`,
+      `--print-to-pdf=${out}`,
+      `file://${html}`,
+    ],
+    { stderr: "pipe" },
+  );
+
+  const ok = await waitForStableFile(out, 30_000);
+
+  // Terminate Chrome (main process + any helpers bound to this profile).
+  proc.kill();
+  Bun.spawnSync(["pkill", "-9", "-f", `user-data-dir=${profile}`]);
+
+  if (!ok) {
+    console.error(`Failed: PDF not written within timeout for "${name}".`);
+    console.error(await new Response(proc.stderr).text());
+    return false;
+  }
+  console.log(`${name.padEnd(13)} → ${out}`);
+  return true;
+}
+
+function usage(): never {
+  console.error("Unknown variant. Valid variants:\n");
+  for (const [name, v] of Object.entries(VARIANTS)) {
+    const marker = name === DEFAULT_VARIANT ? " (default)" : "";
+    console.error(`  ${name.padEnd(13)} ${v.label}${marker}`);
+  }
+  console.error(`  ${"all".padEnd(13)} print every variant`);
   process.exit(1);
 }
-console.log(`Resume PDF written: ${out}`);
+
+const requested = process.argv[2] ?? DEFAULT_VARIANT;
+const outOverride = process.argv[3];
+
+if (requested === "all") {
+  if (outOverride) {
+    console.error("Failed: a custom output path cannot be combined with 'all'.");
+    process.exit(1);
+  }
+  const results = [];
+  for (const name of Object.keys(VARIANTS)) results.push(await print(name));
+  process.exit(results.every(Boolean) ? 0 : 1);
+}
+
+if (!(requested in VARIANTS)) usage();
+
+process.exit((await print(requested, outOverride)) ? 0 : 1);

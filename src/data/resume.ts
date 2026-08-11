@@ -97,7 +97,7 @@ export const resumeData: ResumeData = {
         "Detected, investigated, and contained a third-party compromise that reached the environment through a vendor: scoped the blast radius and confirmed it went no further, remediated it, and closed the gap with tighter controls and vendor oversight.",
         "Stood up PCI-DSS and SOC 2 Type II with HIPAA controls from nothing, first-time certification on each, mapped to NIST CSF, 10+ audits with zero material findings, and wrote the incident-response plan and every security runbook from a blank page.",
         "Built an AI call-monitoring and compliance platform across 65+ agents and thousands of daily calls: sentiment grading and automatic verification of required legal disclosures and consent, replacing manual spot-checks with full coverage and automating 80 to 100 hours of manual work a month.",
-        "Designed a two-zone AI phone system where the model never touches cardholder data, keeping the AI out of PCI scope: thousands of calls a day and a ~10% increase in program revenue. Segmented the network into isolated zones with MFA and least-privilege access across identity, devices, and data.",
+        "Delivered AI into production inside a strict compliance boundary, with the model architecturally separated from regulated data. Segmented the network into isolated zones with MFA and least-privilege access across identity, devices, and data.",
         "Built the company's first real disaster recovery and continuity and drove uptime to 99.99%, scaled the environment from 75 to 300 employees, and moved to multi-state remote operations in a week when COVID hit, opening 8+ states.",
         "The technical voice to ownership, clients, legal, and regulators: turned vague business problems into systems that ship, and carried the proposals, RFPs, and security reviews behind eight-figure regulated-client revenue.",
       ],
@@ -255,9 +255,9 @@ export const resumeData: ResumeData = {
 
   projects: [
     {
-      name: "AI Phone System (IVR)",
+      name: "AI Voice System",
       description:
-        "An AI-driven phone system that turned a manual, rules-based call workflow into a self-service revenue channel. Handles thousands of calls a day with routing, self-service, and follow-up. Contributes an estimated 10% of company revenue.",
+        "A production AI voice system built for a regulated environment, with the model kept architecturally separate from sensitive data. Designed and delivered end to end. Specifics reserved for direct conversation.",
       technologies: "Cloud Telephony, SIP, Python, LLM APIs, Speech-to-Text",
     },
     {

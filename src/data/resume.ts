@@ -219,12 +219,12 @@ export const resumeData: ResumeData = {
     {
       name: "Certified Information Systems Security Professional",
       abbreviation: "CISSP",
-      detail: "ISC2",
+      detail: "ISC2 · #928259",
     },
     {
       name: "Project Management Professional",
       abbreviation: "PMP",
-      detail: "PMI",
+      detail: "PMI · #9852796",
     },
     {
       name: "VMware Certified Professional",

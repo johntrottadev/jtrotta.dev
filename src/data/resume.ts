@@ -255,18 +255,6 @@ export const resumeData: ResumeData = {
 
   projects: [
     {
-      name: "AI Voice System",
-      description:
-        "A production AI voice system built for a regulated environment, with the model kept architecturally separate from sensitive data. Designed and delivered end to end. Specifics reserved for direct conversation.",
-      technologies: "Cloud Telephony, SIP, Python, LLM APIs, Speech-to-Text",
-    },
-    {
-      name: "Compliance Monitoring Platform",
-      description:
-        "AI platform that replaced manual spot-checking with full-coverage legal disclosure verification and sentiment analysis on customer calls. Closed the compliance blind spots that sampling could never catch.",
-      technologies: "Python, Speech-to-Text, LLM APIs, Sentiment Analysis",
-    },
-    {
       name: "Homelab",
       description:
         "Production-grade k3s cluster on ProxMox, GitOps-managed with Flux. Runs 25+ services across monitoring, automation, media, document management, and AI workloads. Bare metal.",

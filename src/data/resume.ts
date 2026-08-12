@@ -82,7 +82,7 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "Technology and security leader with 18 years in regulated financial services, hands-on through today. I build and run the infrastructure and security program for a 300-employee firm — the full stack, from network and identity through compliance, detection, and AI in production. I've stood up security and compliance from nothing with a clean audit record, run point on the incidents that mattered, and turned vague business problems into systems that ship. CISSP and PMP, and I still write code when it's the fastest path to the answer.",
+    "Technology and security leader with 18 years in regulated financial services, still hands-on today. I build and run the whole infrastructure and security program for a 300-employee firm, from network and identity through compliance, detection, and AI in production. I've stood up security and compliance from nothing with a clean audit record, run point on the incidents that mattered, and turned vague business problems into systems that ship. CISSP and PMP, and I still write code when that's the fastest way to the answer.",
 
   experience: [
     {
@@ -108,8 +108,8 @@ export const resumeData: ResumeData = {
       location: "Staten Island, NY",
       description: "",
       bullets: [
-        "Led the endpoint response to the 2017 WannaCry outbreak: contained the estate, coordinated recovery, and restored full operations in 48 hours. Then closed the root cause — signature AV with no patching — with managed patching (WSUS), a domain GPO security baseline, behavior-based EDR, and LAPS.",
-        "Took over a consultant-run environment and built the security function in-house — the in-sourcing the CTSO role was created from in 2019. Replaced a 30-minute manual account-provisioning process with a PowerShell workflow later compiled into the zero-touch tool HR uses today.",
+        "Led the endpoint response to the 2017 WannaCry outbreak: contained the estate, coordinated recovery, and restored full operations in 48 hours. The root cause was signature AV with no patching, so I closed it with managed patching (WSUS), a domain GPO security baseline, behavior-based EDR, and LAPS.",
+        "Took over a consultant-run environment and built the security function in-house, the in-sourcing my CTSO role was created from in 2019. Replaced a 30-minute manual account-provisioning process with a PowerShell workflow we later turned into the zero-touch tool HR uses today.",
         "Owned availability, security, patching, and compliance across every enterprise system.",
       ],
     },

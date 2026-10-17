@@ -226,6 +226,11 @@ export const resumeData: ResumeData = {
       detail: "PMI · #9852796",
     },
     {
+      name: "AWS Certified Solutions Architect – Associate",
+      abbreviation: "AWS",
+      detail: "Amazon Web Services · SAA-C03 · 2026",
+    },
+    {
       name: "VMware Certified Professional",
       abbreviation: "VCP",
       detail: "Data Center Virtualization 6.7",

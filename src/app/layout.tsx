@@ -3,14 +3,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jtrotta.dev"),
-  title: "John Trotta | Chief Technology & Security Officer",
+  title: "John Trotta | Director of IT & Security",
   description:
     "Security and technology executive with 17 years building enterprise security, compliance, and infrastructure programs in regulated financial services.",
   icons: {
     icon: "/icon.svg",
   },
   openGraph: {
-    title: "John Trotta | Chief Technology & Security Officer",
+    title: "John Trotta | Director of IT & Security",
     description:
       "Security and technology executive. 17 years building enterprise security, compliance, and infrastructure programs in regulated financial services.",
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "John Trotta | Chief Technology & Security Officer",
+    title: "John Trotta | Director of IT & Security",
     description:
       "Security and technology executive. 17 years building enterprise security, compliance, and infrastructure programs in regulated financial services.",
     images: ["/og-image.png"],

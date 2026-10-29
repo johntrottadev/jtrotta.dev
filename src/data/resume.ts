@@ -82,16 +82,16 @@ export const resumeData: ResumeData = {
   },
 
   summary:
-    "Technology and security leader with 18 years in regulated financial services, still hands-on today. I build and run the whole infrastructure and security program for a 300-employee firm, from network and identity through compliance, detection, and AI in production. I've stood up security and compliance from nothing with a clean audit record, run point on the incidents that mattered, and turned vague business problems into systems that ship. CISSP and PMP, and I still write code when that's the fastest way to the answer.",
+    "Technology and security leader with 14 years in regulated financial services, still hands-on today. I build and run the whole infrastructure and security program for a 300-employee firm, from network and identity through compliance, detection, and AI in production. I've stood up security and compliance from nothing with a clean audit record, run point on the incidents that mattered, and turned vague business problems into systems that ship. CISSP and PMP, and I still write code when that's the fastest way to the answer.",
 
   experience: [
     {
-      role: "Chief Technology & Security Officer",
+      role: "Director of IT & Security",
       company: "RTR Financial Services, Inc.",
       period: "August 2019 - Present",
       location: "Staten Island, NY",
       description:
-        "Functioning as the company's CISO under a Chief Technology & Security Officer title. Own security, technology, and compliance for a 300-employee regulated financial services firm across hybrid on-prem and cloud, on a $2M budget: decide what gets built, build it with the team, and own how it runs. Report to ownership.",
+        "Own security, technology, and compliance for a 300-employee regulated financial services firm across hybrid on-prem and cloud, on a $2M budget: decide what gets built, build it with the team, and own how it runs. Report to ownership.",
       bullets: [
         "Built and run the security program as defense in depth: behavior-based EDR (SentinelOne) and ThreatLocker application allow-listing on the endpoint, DLP across the network and application layers, an email-security detection program, and SIEM-based monitoring with insider-threat alerting on new-hire risk signals. I set the coverage and priorities; the security engineers operate the stack. It has caught real phishing and flagged and removed real insider risk.",
         "Detected, investigated, and contained a third-party compromise that reached the environment through a vendor: scoped the blast radius and confirmed it went no further, remediated it, and closed the gap with tighter controls and vendor oversight.",
@@ -109,35 +109,19 @@ export const resumeData: ResumeData = {
       description: "",
       bullets: [
         "Led the endpoint response to the 2017 WannaCry outbreak: contained the estate, coordinated recovery, and restored full operations in 48 hours. The root cause was signature AV with no patching, so I closed it with managed patching (WSUS), a domain GPO security baseline, behavior-based EDR, and LAPS.",
-        "Took over a consultant-run environment and built the security function in-house, the in-sourcing my CTSO role was created from in 2019. Replaced a 30-minute manual account-provisioning process with a PowerShell workflow we later turned into the zero-touch tool HR uses today.",
+        "Took over a consultant-run environment and built the security function in-house, the in-sourcing my current role was created from in 2019. Replaced a 30-minute manual account-provisioning process with a PowerShell workflow we later turned into the zero-touch tool HR uses today.",
         "Owned availability, security, patching, and compliance across every enterprise system.",
-      ],
-    },
-    {
-      role: "Infrastructure & Security Lead",
-      company: "RTR Financial Services, Inc.",
-      period: "2014 - 2016",
-      location: "Staten Island, NY",
-      description: "",
-      bullets: [
-        "Transformed how the existing environment was used: reworked current tools, standardized automation with PowerShell and Python, added new systems as extensions to what was already in place, and built the procedures to meet new client requirements.",
       ],
     },
     {
       role: "Systems Administrator",
       company: "RTR Financial Services, Inc.",
-      period: "2012 - 2014",
+      period: "2012 - 2016",
       location: "Staten Island, NY",
       description: "",
-      bullets: [],
-    },
-    {
-      role: "Business Analyst",
-      company: "RTR Financial Services, Inc.",
-      period: "August 2008 - 2012",
-      location: "Staten Island, NY",
-      description: "",
-      bullets: [],
+      bullets: [
+        "Transformed how the existing environment was used: reworked current tools, standardized automation with PowerShell and Python, added new systems as extensions to what was already in place, and built the procedures to meet new client requirements.",
+      ],
     },
   ],
 
@@ -228,7 +212,7 @@ export const resumeData: ResumeData = {
     {
       name: "AWS Certified Solutions Architect – Associate",
       abbreviation: "AWS",
-      detail: "Amazon Web Services · SAA-C03 · 2026",
+      detail: "Amazon Web Services · SAA-C03",
     },
     {
       name: "VMware Certified Professional",
